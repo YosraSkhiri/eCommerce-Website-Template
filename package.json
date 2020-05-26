@@ -1,0 +1,17 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "Shop is an eCommerce website template. build with pug and sass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch src/styles/main.scss -o build/styles --source-map true",
+    "pug": "pug -w ./src/views/pages -o ./build -P"
+  },
+  "author": "Yosra Skhiri",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "pug": "^2.0.4"
+  }
+}

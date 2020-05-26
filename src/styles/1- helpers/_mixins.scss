@@ -1,0 +1,13 @@
+@mixin fontFace($path, $family, $type: '', $svg:'', $weight: 400, $style: normal) {
+    @font-face {
+      font-family: $family;
+        src: url('#{$path}#{$type}.eot');
+        src: url('#{$path}#{$type}.eot?#iefix') format('embedded-opentype'), 
+            url('#{$path}#{$type}.woff2') format('woff2'), 
+            url('#{$path}#{$type}.woff') format('woff'), 
+            url('#{$path}#{$type}.ttf') format('truetype'), 
+            url('#{$path}#{$type}.svg##{$svg}') format('svg');
+      font-weight: $weight;
+      font-style: $style;
+    }
+}
