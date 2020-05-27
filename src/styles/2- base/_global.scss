@@ -1,0 +1,28 @@
+body {
+    width: 100%;
+    font-family: $font-family;
+    color: $primary-text-color;
+    background-color: rgb(243, 243, 243);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 90%;
+    padding: 0px 35px;
+    margin: auto;
+}
+
+.flex--center {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 98%;
+        padding: 0px 30px;
+    }
+    
+}

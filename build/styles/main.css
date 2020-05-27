@@ -1,0 +1,258 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  background: none;
+  line-height: 1.2;
+  font-family: inherit; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins-light-webfont.eot");
+  src: url("../fonts/poppins-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-light-webfont.woff2") format("woff2"), url("../fonts/poppins-light-webfont.woff") format("woff"), url("../fonts/poppins-light-webfont.ttf") format("truetype"), url("../fonts/poppins-light-webfont.svg#poppinslight") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins-medium-webfont.eot");
+  src: url("../fonts/poppins-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-medium-webfont.woff2") format("woff2"), url("../fonts/poppins-medium-webfont.woff") format("woff"), url("../fonts/poppins-medium-webfont.ttf") format("truetype"), url("../fonts/poppins-medium-webfont.svg#poppinsmedium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins-regular-webfont.eot");
+  src: url("../fonts/poppins-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.woff") format("woff"), url("../fonts/poppins-regular-webfont.ttf") format("truetype"), url("../fonts/poppins-regular-webfont.svg#poppinsregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins-semibold-webfont.eot");
+  src: url("../fonts/poppins-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../fonts/poppins-semibold-webfont.woff") format("woff"), url("../fonts/poppins-semibold-webfont.ttf") format("truetype"), url("../fonts/poppins-semibold-webfont.svg#poppinssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins-bold-webfont.eot");
+  src: url("../fonts/poppins-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../fonts/poppins-bold-webfont.woff") format("woff"), url("../fonts/poppins-bold-webfont.ttf") format("truetype"), url("../fonts/poppins-bold-webfont.svg#poppinsbold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+body {
+  width: 100%;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  color: #111111;
+  background-color: #f3f3f3;
+  overflow-x: hidden; }
+
+.container {
+  max-width: 90%;
+  padding: 0px 35px;
+  margin: auto; }
+
+.flex--center {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center; }
+
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 98%;
+    padding: 0px 30px; } }
+
+.navbar {
+  display: fixed;
+  padding: 48px 0;
+  border-bottom: 1px solid #E5E5E5; }
+  .navbar__links {
+    font-weight: 600; }
+  .navbar__link {
+    display: inline-block;
+    padding: 0 8px;
+    margin: 0 30px;
+    cursor: pointer; }
+    .navbar__link-item {
+      display: inline-block; }
+  .navbar__utility {
+    display: inline-block;
+    padding: 0 8px;
+    cursor: pointer; }
+
+.navbar__logo {
+  white-space: nowrap; }
+
+.navbar__logo-svg {
+  width: 45.77px;
+  height: 35px; }
+
+.logo__txt {
+  position: relative;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 24px;
+  bottom: 11px;
+  white-space: nowrap; }
+
+.navbar__logo,
+.navbar__links,
+.navbar__utilities {
+  flex-wrap: nowrap; }
+
+.menu {
+  display: none; }
+
+#profile {
+  display: none; }
+
+.navbar-level-2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 136px;
+  background-color: white;
+  padding: 54px 0px;
+  display: none; }
+
+.main-list__item {
+  font-size: 14px;
+  font-weight: 600; }
+
+.main-list__item:not(:last-child) {
+  margin-bottom: 14px; }
+
+.list-category:first-child {
+  margin-bottom: 42px; }
+
+.list-category__title {
+  margin-bottom: 23px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.list-category__item {
+  font-size: 13px; }
+
+.list-category__item:not(:last-child) {
+  margin-bottom: 13px; }
+
+.list-group-ad__img {
+  display: block;
+  max-width: 100%; }
+
+.list-group-ad__img:not(:last-child) {
+  margin-bottom: 16px; }
+
+.submenu-show {
+  display: block; }
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: inline-block; }
+  .menu-show {
+    animation: menuShow .3s ease-in-out forwards; }
+  #profile {
+    display: block; }
+  .menu-hide {
+    display: none; }
+  #avatar {
+    display: none; }
+  .navbar__links {
+    min-height: 100vh;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    z-index: -1;
+    padding: 135px 0;
+    background-color: white; }
+  @keyframes menuShow {
+    0% {
+      right: -100%; }
+    100% {
+      right: 0; } }
+  .navbar__link {
+    display: block;
+    margin: 0;
+    padding: 30px 51px 30px 80px;
+    text-align: right; }
+    .navbar__link-item {
+      display: block; }
+  .navbar-level-2 {
+    position: static;
+    text-align: right;
+    padding: 20px 0; }
+    .navbar-level-2 .flex--center {
+      flex-direction: column;
+      align-items: flex-end; }
+    .navbar-level-2 .flex--center > * {
+      margin-bottom: 42px; } }
+
+@media only screen and (max-width: 425px) {
+  .navbar {
+    padding: 28px 0; }
+  .navbar__logo-svg {
+    width: 43px;
+    height: 33px; }
+  .logo__txt {
+    font-size: 17px;
+    margin-left: 17px; } }
+
+.search-bar {
+  display: none;
+  position: relative;
+  margin-right: 20px; }
+  .search-bar--icon {
+    position: absolute;
+    top: 15px;
+    right: 22px; }
+
+.search-bar--show {
+  display: inline-block; }
+
+.txt-input {
+  font-size: 13px;
+  border-radius: 50px;
+  border: 1px solid black;
+  width: 415px; }
+
+.search-bar--input {
+  display: inline-block;
+  padding: 15px 40px 15px 28px; }
+
+@media only screen and (max-width: 1250px) {
+  .search-bar {
+    margin-right: 0px;
+    padding: 0 10px;
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    transform: translateX(50%); } }
+
+@media only screen and (max-width: 425px) {
+  .search-bar {
+    top: 100px; }
+  .search-bar--input {
+    width: 300px; } }
+
+/*# sourceMappingURL=main.css.map */
