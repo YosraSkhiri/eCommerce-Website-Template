@@ -1,0 +1,27 @@
+.btn-round {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    position: relative;
+    border-radius: 50px;
+    background-color: $primary-color;
+    cursor: pointer;
+
+    &__icon--center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__txt {
+        display: inline-block;
+        margin-left: 22px;
+        margin-top: 15px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        vertical-align: top;
+
+    }
+}

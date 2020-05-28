@@ -2,8 +2,8 @@ body {
     width: 100%;
     font-family: $font-family;
     color: $primary-text-color;
-    background-color: rgb(243, 243, 243);
-    overflow-x: hidden;
+    //background-color: rgb(243, 243, 243);
+    //overflow-x: hidden;
 }
 
 .container {
@@ -17,6 +17,10 @@ body {
     justify-content: space-between;
     justify-items: center;
     align-items: center;
+}
+
+.flex {
+    display: flex;
 }
 
 @media only screen and (max-width: 425px) {

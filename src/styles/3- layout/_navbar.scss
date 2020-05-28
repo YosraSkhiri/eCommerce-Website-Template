@@ -1,7 +1,11 @@
 .navbar {
-    display: fixed;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
     padding: 48px 0;
-    border-bottom: 1px solid #E5E5E5;
+    color: white;
+    //border-bottom: 1px solid #E5E5E5;
 
     &__links {
         font-weight: 600;
@@ -60,13 +64,14 @@
 }
 
 .navbar-level-2 {
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;
     top: 136px;
-    background-color: white;
     padding: 54px 0px;
-    display: none;
+    background-color: white;
+    color: #111111;
 }
 
 .main-list__item {
@@ -97,17 +102,25 @@
     margin-bottom: 13px;
 }
 
-.list-group-ad__img {
+.list-group-ad__link {
     display: block;
     max-width: 100%;
 }
 
-.list-group-ad__img:not(:last-child) {
+.list-group-ad__link:not(:last-child) {
     margin-bottom: 16px;
 }
 
 .submenu-show {
     display: block;
+}
+
+.fill-black path, .fill-black rect {
+    fill: black;
+}
+
+.fill-white path, .fill-white rect {
+    fill: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -132,13 +145,16 @@
     }
 
     .navbar__links {
-        min-height: 100vh;
+        max-height: 100vh;
         position: absolute;
         right: -100%;
         top: 0;
         z-index: -1;
         padding: 135px 0;
         background-color: white;
+        color: black;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     @keyframes menuShow {
@@ -165,6 +181,10 @@
         position: static;
         text-align: right;
         padding: 20px 0;
+        max-height: 100vh;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+
 
         .flex--center {
             flex-direction: column;
