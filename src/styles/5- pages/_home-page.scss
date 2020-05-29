@@ -79,6 +79,10 @@
     }
 }
 
+.spacing {
+    padding: 37px 0;
+}
+
 .container-card-ad {
     display: grid;
     grid-template-columns: 50% 25% 25%;
@@ -86,8 +90,7 @@
         "a b c"; 
     justify-content: center;
     justify-items: center;
-    grid-gap: 20px;
-    padding: 37px 0;
+    grid-gap: 15px;
 }
 
 .a {
@@ -134,6 +137,7 @@
         font-size: 25px;
         font-weight: 500;
         line-height: 1.6;
+        margin-top: 15px;
     }
 }
 
@@ -147,6 +151,26 @@
 
 .card-ad--img-3 {
     background-image: url("../images/person-sale-sign.png");
+}
+
+.sub-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.section-title--default {
+    font-size: 29px;
+    font-weight: 400;
+    padding-right: 8px;
+}
+
+.container-product-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    justify-content: center;
 }
 
 
@@ -192,4 +216,10 @@
         "c";  
     }   
 
+}
+
+@media only screen and (max-width: 425px) {
+    .section-title--default {
+        font-size: 20px;
+    }
 }

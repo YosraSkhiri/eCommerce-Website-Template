@@ -30,12 +30,12 @@ body {
 .tag {
     display: inline-block;
     padding: 8px 10px;
-    margin-bottom: 15px;
     font-size: 12px;
     font-weight: 600;
     text-align: center;
     background-color: $secondary-color;
     border-radius: 40px;
+    color: white;
 }
 
 @media only screen and (max-width: 425px) {

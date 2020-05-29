@@ -13,6 +13,10 @@
         margin-top: 25px;
         background-color: white;
     }
+
+    &--default {
+        border: 1px solid #D8D8D8;
+    }
 }
 
 .btn-round {
@@ -21,7 +25,6 @@
     height: 39px;
     position: relative;
     border-radius: 50px;
-    background-color: $primary-color;
     cursor: pointer;
 
     &__icon--center {
@@ -39,6 +42,23 @@
         font-weight: 600;
         text-transform: uppercase;
         vertical-align: top;
+    }
 
+    &--primary {
+        background-color: $primary-color;
+    }
+    
+    &--secondary {
+        background-color: white;
+        svg path {
+            fill: black;
+        }
+
+        &:hover {
+            background-color: $primary-color;
+            svg path {
+                fill: white;
+            }
+        }
     }
 }

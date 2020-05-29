@@ -9,7 +9,7 @@ block body
             .hero-section__content
                 p.hero-section__txt Sale of the summer collection
                 .hero-section__call-to-action
-                    a.btn-round
+                    a.btn-round.btn-round--primary
                         svg.btn-round__icon--center(xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 15.336 13.329")
                             path(d="M6.663,13.329,1.107,7.768,0,6.661,1.107,5.553,6.663,0,7.77,1.1,3,5.878H15.336V7.443H3L7.77,12.219Z" transform="translate(15.336 13.329) rotate(180)" fill="#fff")
                     
@@ -55,7 +55,7 @@ block body
     
     .container
         main.wrapper
-            .container-card-ad
+            .container-card-ad.spacing
                 .card-ad.card-ad--img-1.a
                     .card-ad__content
                         h3.card-ad__title New arrivals are now in!
@@ -71,3 +71,14 @@ block body
                         span.tag -50 %
                         h3.card-ad__title Sale this summer
                         a.btn.btn--white(href="#") VIEW ALL
+
+            .row.spacing
+                .sub-row
+                    h1.section-title--default Selected just for you
+                    a.btn.btn--default(href="#") Show more
+
+                .container-product-card
+                    +productCard("promo")
+                    +productCard()
+                    +productCard()
+                    +productCard()
