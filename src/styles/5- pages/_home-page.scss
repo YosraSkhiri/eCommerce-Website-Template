@@ -51,6 +51,7 @@
     display: flex;
     flex: 1;
     align-items: flex-start;
+    padding: 0 8px;
 
     &__icon {
         width: 39px;
@@ -78,14 +79,93 @@
     }
 }
 
+.container-card-ad {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: 
+        "a b c"; 
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 20px;
+    padding: 37px 0;
+}
+
+.a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+
+.card-ad {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: white;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 56px;
+        left: 30px;
+        max-width: 200px;
+        margin: 0 8px;
+
+    }
+
+    &__title {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.6;
+    }
+}
+
+.card-ad--img-1 {
+    background-image: url("../images/adult-black-clothes-dark.png");
+}
+
+.card-ad--img-2 {
+    background-image: url("../images/beach-black-pants-black-shirt.png");
+}
+
+.card-ad--img-3 {
+    background-image: url("../images/person-sale-sign.png");
+}
+
 
 @media only screen and (max-width: 1024px) {
     .hero-section__content {
         padding-top: 250px;
     }
+
     .hero-section__txt {
         font-size: 50px;
     }
+
+    .container-card-ad {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "a a"
+        "b c";  
+    }   
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -103,3 +183,13 @@
     }
 }
 
+@media only screen and (max-width: 628px) {
+    .container-card-ad {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";  
+    }   
+
+}
