@@ -3,20 +3,16 @@
     top: 0;
     z-index: 2;
     width: 100%;
-    padding: 48px 0;
-    color: white;
-    background-color: rgba(255, 255, 255, 0);
-    //border-bottom: 1px solid #E5E5E5;
+    padding: 40px 0;
+    color: $light-text-color;
+    background-color: $nav-bg-color--default;
     transition: all .3s ease-in-out;
-
-    &__links {
-        font-weight: 600;
-    }
 
     &__link {
         display: inline-block;
         padding: 0 8px;
         margin: 0 30px;
+        font-weight: 600;
         cursor: pointer;
 
         &-item {
@@ -31,36 +27,35 @@
     }
 
     &--white {
-        background-color: white;
-        color: black;
+        background-color: $nav-bg-color--light;
+        color: $primary-text-color;
         border-bottom: 1px solid #E5E5E5;
     }
-}
 
-.navbar__logo {
-    white-space: nowrap;
-}
+    &__logo {
+        white-space: nowrap;
+    }
+    
+    &__logo-svg {
+        width: 45.77px; 
+        height: 35px;
+    }
 
-.navbar__logo-svg {
-    width: 45.77px; 
-    height: 35px;
-}
-
-.logo__txt {
-    position: relative;
-    display: inline-block;
-    font-size: 19px;
-    font-weight: 500;
-    margin-left: 24px;
-    bottom: 11px;
-    white-space: nowrap;
+    &__logo-txt {
+        position: relative;
+        display: inline-block;
+        font-size: 19px;
+        font-weight: 500;
+        margin-left: 24px;
+        bottom: 11px;
+        white-space: nowrap;
+    }
 }
 
 .navbar__logo,
 .navbar__links,
 .navbar__utilities {
     flex-wrap: nowrap;
-
 }
 
 .menu {
@@ -76,10 +71,10 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top: 136px;
+    top: 120px;
     padding: 54px 0px;
-    background-color: white;
-    color: #111111;
+    background-color: $nav-bg-color--light;
+    color: $primary-text-color;
 }
 
 .main-list__item {
@@ -89,6 +84,10 @@
 
 .main-list__item:not(:last-child) {
     margin-bottom: 14px;
+}
+
+.list-group {
+    padding: 0 8px;
 }
 
 .list-category:first-child {
@@ -124,11 +123,11 @@
 }
 
 .fill-black path, .fill-black rect {
-    fill: black;
+    fill: $primary-text-color;
 }
 
 .fill-white path, .fill-white rect {
-    fill: white;
+    fill: $light-text-color;
 }
 
 @media only screen and (max-width: 768px) {
@@ -159,8 +158,8 @@
         top: 0;
         z-index: -1;
         padding: 135px 0;
-        background-color: white;
-        color: black;
+        background-color: $nav-bg-color--light;
+        color: $primary-text-color;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
     }
@@ -214,8 +213,8 @@
         width: 43px; 
         height: 33px;
     }
-    
-    .logo__txt {
+
+    .navbar__logo-txt {
         font-size: 17px;
         margin-left: 17px;
     }

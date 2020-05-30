@@ -1,0 +1,54 @@
+.newsletter {
+    position: relative;
+    z-index: 0;
+    min-height: 242px;
+    background-image: url(../images/newsletter-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 104px;
+
+        & > * {
+            align-self: center;
+            justify-self: center;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            flex-direction: column;
+            padding: 30px;
+        }
+    }
+
+    &__title {
+        max-width: 520px;
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 1.4;
+        color: $light-text-color;
+        margin-bottom: 18px;
+
+        @media only screen and (max-width: 1024px) {
+            font-size: 20px;
+            text-align: center;
+        }
+
+    }
+
+    & > * {
+        align-self: center;
+        justify-self: center;
+    }
+
+    &::before {
+        @extend %img-dark-overlay
+    }
+
+    &__input {
+        max-width: 315px;
+        margin-bottom: 8px;
+    }
+}

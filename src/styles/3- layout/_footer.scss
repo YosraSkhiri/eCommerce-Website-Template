@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    &__group-links {
+        padding: 0 8px;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    &__link,
+    &__info {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    &__credit {
+        margin-top: 40px;
+        font-size: 12px;
+        text-align: center;
+        color: #AEAEAE;
+    }
+
+    &__app-badge-img {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    &__social-media-links {
+        padding: 16px 0;
+
+    }
+
+    &__social-media-link {
+        margin: 0 18px;
+    }
+}

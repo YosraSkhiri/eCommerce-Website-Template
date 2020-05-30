@@ -2,7 +2,6 @@ body {
     width: 100%;
     font-family: $font-family;
     color: $primary-text-color;
-    //background-color: rgb(243, 243, 243);
     //overflow-x: hidden;
 }
 
@@ -23,25 +22,20 @@ body {
     align-items: center;
 }
 
-.flex {
-    display: flex;
-}
-
 .tag {
     display: inline-block;
     padding: 8px 10px;
+    border-radius: 40px;
     font-size: 12px;
     font-weight: 600;
     text-align: center;
+    color: $light-text-color;
     background-color: $secondary-color;
-    border-radius: 40px;
-    color: white;
 }
 
 @media only screen and (max-width: 425px) {
     .container {
         max-width: 98%;
         padding: 0px 30px;
-    }
-    
+    } 
 }

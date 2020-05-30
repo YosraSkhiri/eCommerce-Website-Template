@@ -14,15 +14,15 @@
 }
 
 .txt-input {
-    font-size: 13px;
-    border-radius: 50px;
     width: 415px;
-    background-color: white;
+    padding: 15px 40px 15px 28px;
+    border-radius: 50px;
+    font-size: 13px;
+    background-color: $light-bg-color;
 }
 
 .search-bar--input {
     display: inline-block;
-    padding: 15px 40px 15px 28px;
 }
 
 @media only screen and (max-width: 1250px) {

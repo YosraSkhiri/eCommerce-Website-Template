@@ -17,7 +17,7 @@ block body
                         a(href="#") Shop now
         
         .hero-section__services
-            .flex
+            .services-flex
                 .service-item
                     .service-item__icon
                         svg(xmlns="http://www.w3.org/2000/svg" width="20.49" height="12.1" viewBox="0 0 20.49 12.1")
@@ -77,8 +77,10 @@ block body
                     h1.section-title--default Selected just for you
                     a.btn.btn--default(href="#") Show more
 
-                .container-product-card
-                    +productCard("promo")
-                    +productCard()
-                    +productCard()
-                    +productCard()
+                .product-cards-slider
+                    .container-product-card
+                        +productCard("promo")
+                        - for(var i=1; i<=15; i++){
+                            +productCard()
+                        - }
+                        
