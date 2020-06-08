@@ -1,15 +1,26 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas: "col col col col col";
+    justify-content: center;
+    align-content: center;
 
     &__group-links {
         padding: 0 8px;
+        justify-self: self-start;
+        width: 160px;
+
+        @media only screen and (max-width: 768px) {
+            padding-bottom: 16px;
+        }
     }
 
     &__title {
         margin-bottom: 28px;
         font-size: 16px;
         text-transform: uppercase;
+        font-weight: 600;
     }
 
     &__link,
@@ -32,10 +43,22 @@
 
     &__social-media-links {
         padding: 16px 0;
-
     }
 
     &__social-media-link {
-        margin: 0 18px;
+        display: inline-block;
+        margin-right: 25px;
+        margin-bottom: 25px;
     }
+
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "col col" "col col" "col col";
+    }
+
+    @media only screen and (max-width: 375px){
+        grid-template-columns: 1fr;
+        grid-template-areas: "col";
+    }
+
 }

@@ -9,6 +9,11 @@ body {
     max-width: 90%;
     padding: 0px 35px;
     margin: auto;
+
+    @media only screen and (max-width: 425px) {
+        max-width: 98%;
+        padding: 0px 30px;   
+    }
 }
 
 .wrapper {
@@ -31,11 +36,4 @@ body {
     text-align: center;
     color: $light-text-color;
     background-color: $secondary-color;
-}
-
-@media only screen and (max-width: 425px) {
-    .container {
-        max-width: 98%;
-        padding: 0px 30px;
-    } 
 }

@@ -350,7 +350,10 @@
             <h1 class="section-title--default">Selected just for you</h1><a class="btn btn--default" href="#">Show more</a>
           </div>
           <div class="product-cards-slider">
-            <div class="container-product-card">
+            <svg class="product-cards-slider_left-arrow" id="leftArrow" xmlns="http://www.w3.org/2000/svg" width="23.336" height="20.281" viewBox="0 0 23.336 20.281">
+              <path d="M10.139,20.281,1.685,11.82,0,10.135,1.685,8.45,10.139,0l1.685,1.681L4.561,8.944H23.336v2.383H4.561l7.263,7.266Z" fill="#cecece"></path>
+            </svg>
+            <div class="product-cards-slider__cards-container">
               <div class="product-card">
                 <div class="product-card__img">
                   <div class="product-card__actions"><span class="tag">30 %</span>
@@ -576,6 +579,9 @@
                 </div>
               </div>
             </div>
+            <svg class="product-cards-slider_right-arrow" id="rightArrow" xmlns="http://www.w3.org/2000/svg" width="23.336" height="20.281" viewBox="0 0 23.336 20.281">
+              <path d="M10.139,20.281,1.685,11.82,0,10.135,1.685,8.45,10.139,0l1.685,1.681L4.561,8.944H23.336v2.383H4.561l7.263,7.266Z" transform="translate(23.336 20.281) rotate(180)"></path>
+            </svg>
           </div>
         </div>
       </main>
@@ -583,10 +589,10 @@
     <div class="container spacing">
       <div class="newsletter">
         <div class="newsletter__content">
-          <h1 class="newsletter__title">Subscribe to our newsletter and receive exclusive offers every week</h1>
+          <p class="newsletter__title">Subscribe to our newsletter and receive exclusive offers every week</p>
           <div class="newsletter__form">
             <input class="txt-input newsletter__input" type="text" name="Newsletter" placeholder="Enter your email">
-            <input class="btn btn--primary" type="submit" value="Subscribe">
+            <input class="btn btn--primary newsletter__btn" type="submit" value="Subscribe">
           </div>
         </div>
       </div>
@@ -624,13 +630,13 @@
               <li class="footer__link"><a href="#">Student Discount</a></li>
             </ul>
           </div>
-          <div class="footer__group-links">
-            <h3 class="footer__title">CONTACT</h3>
+          <address class="footer__group-links">
+            <div class="footer__title">CONTACT</div>
             <ul>
               <li class="footer__info">fakemail@fakemail.com</li>
               <li class="footer__info">Phone: +12 345 678 910</li>
             </ul>
-          </div>
+          </address>
           <div class="footer__group-links"><a href="#"><img class="footer__app-badge-img" src="images/google-play-badge.png" alt="Google Play Badge"></a><a href="#"><img class="footer__app-badge-img" src="images/download-on-the-app-store-apple.png" alt="Apple Store Badge"></a>
             <div class="footer__social-media-links"><a class="footer__social-media-link" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="9.368" height="17.326" viewBox="0 0 9.368 17.326">

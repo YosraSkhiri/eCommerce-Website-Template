@@ -7,6 +7,20 @@
         top: 15px;
         right: 22px;
     }    
+
+    @media only screen and (max-width: 1250px) {
+        margin-right: 0px;
+        padding: 0 10px;
+        position: absolute;
+        top: 150px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    @media only screen and (max-width: 425px) {
+        top: 100px;
+    }
+    
 }
 
 .search-bar--show {
@@ -14,7 +28,6 @@
 }
 
 .txt-input {
-    width: 415px;
     padding: 15px 40px 15px 28px;
     border-radius: 50px;
     font-size: 13px;
@@ -23,26 +36,8 @@
 
 .search-bar--input {
     display: inline-block;
-}
-
-@media only screen and (max-width: 1250px) {
-    .search-bar {
-        margin-right: 0px;
-        padding: 0 10px;
-        position: absolute;
-        top: 150px;
-        right: 50%;
-        transform: translateX(50%);
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    .search-bar {
-        top: 100px;
-
-    }
-
-    .search-bar--input {
+    width: 415px;
+    @media only screen and (max-width: 425px) {
         width: 300px;
     }
 }

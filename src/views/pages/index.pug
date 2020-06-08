@@ -77,10 +77,4 @@ block body
                     h1.section-title--default Selected just for you
                     a.btn.btn--default(href="#") Show more
 
-                .product-cards-slider
-                    .container-product-card
-                        +productCard("promo")
-                        - for(var i=1; i<=15; i++){
-                            +productCard()
-                        - }
-                        
+                include ../components/product-cards-slider

@@ -1,0 +1,13 @@
+.product-cards-slider
+    svg#leftArrow.product-cards-slider_left-arrow(xmlns="http://www.w3.org/2000/svg" width="23.336" height="20.281" viewBox="0 0 23.336 20.281")
+            path(d="M10.139,20.281,1.685,11.82,0,10.135,1.685,8.45,10.139,0l1.685,1.681L4.561,8.944H23.336v2.383H4.561l7.263,7.266Z" fill="#cecece")
+            
+    .product-cards-slider__cards-container
+        +productCard("promo")
+        - for(var i=1; i<=15; i++){
+            +productCard()
+        - }
+
+    svg#rightArrow.product-cards-slider_right-arrow(xmlns="http://www.w3.org/2000/svg" width="23.336" height="20.281" viewBox="0 0 23.336 20.281")
+        path(d="M10.139,20.281,1.685,11.82,0,10.135,1.685,8.45,10.139,0l1.685,1.681L4.561,8.944H23.336v2.383H4.561l7.263,7.266Z" transform="translate(23.336 20.281) rotate(180)")
+    

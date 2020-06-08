@@ -30,11 +30,29 @@
         font-size: 66px;
         font-weight: 700;
         line-height: 1.2;
+
+        @media only screen and (max-width: 1024px) {
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            font-size: 43px;
+        }
     }
 
     &__content {
         padding-top: 160px;
         margin-left: 195px;
+        
+        @media only screen and (max-width: 1024px) {
+            padding-top: 250px; 
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding-top: 250px;
+            margin: auto;  
+        }
+        
     }
 
     &__services {
@@ -50,6 +68,10 @@
         @media only screen and (max-width: 939px) {
             padding: 15px 97px;
         }
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
     }
 }
 
@@ -58,6 +80,10 @@
     justify-content: flex-end;
     align-items: flex-start;
     justify-items: flex-end;
+
+    @media only screen and (max-width: 939px) {
+        display: block; 
+    }
 }
 
 .service-item {
@@ -111,6 +137,21 @@
     grid-gap: 15px;
     justify-content: center;
     justify-items: center;
+
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "a a"
+        "b c";  
+    }
+
+    @media only screen and (max-width: 628px) {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";  
+    }
 }
 
 .a {
@@ -177,59 +218,8 @@
     padding-right: 8px;
     font-size: 29px;
     font-weight: 400;
-}
 
-@media only screen and (max-width: 1024px) {
-    .hero-section__content {
-        padding-top: 250px;
-    }
-
-    .hero-section__txt {
-        font-size: 50px;
-    }
-
-    .container-card-ad {
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
-        "a a"
-        "b c";  
-    }   
-
-}
-
-@media only screen and (max-width: 939px) {
-    .services-flex {
-         display: block;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .hero-section__content {
-        padding-top: 250px;
-        margin: auto;
-    }
-
-    .hero-section__services {
-        display: none;
-    }
-
-    .hero-section__txt {
-        font-size: 43px;
-    }
-}
-
-@media only screen and (max-width: 628px) {
-    .container-card-ad {
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "a"
-        "b"
-        "c";  
-    }   
-}
-
-@media only screen and (max-width: 425px) {
-    .section-title--default {
+    @media only screen and (max-width: 425px) {
         font-size: 20px;
     }
 }

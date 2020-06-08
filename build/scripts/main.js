@@ -47,7 +47,6 @@ menuIcon.addEventListener('click', () => {
     }
     searchBar.classList.remove('search-bar--show')
     menu.classList.toggle('menu-show')
-    
 })
 
 window.onscroll = () => { 
@@ -59,7 +58,7 @@ window.onscroll = () => {
         navIcons.forEach(svg => {
             svg.classList.add('fill-black')
             svg.classList.remove('fill-white')
-        });
+        })
     } 
     else {
         navbar.classList.remove('navbar--white')
@@ -69,29 +68,55 @@ window.onscroll = () => {
         navIcons.forEach(svg => {
             svg.classList.remove('fill-black')
             svg.classList.add('fill-white')
-        });
+        })
     }
-};
+}
 
-const list = document.querySelector('.container-product-card');
-let isDown = false;
-let StartX, scrollLeft;
+const list = document.querySelector('.product-cards-slider__cards-container')
+let isDown = false
+let StartX, scrollLeft
+const leftArrow = document.querySelector('#leftArrow')
+const rightArrow = document.querySelector('#rightArrow')
 
 list.addEventListener('mousedown', (e) => {
-    isDown = true;
-    StartX = e.pageX - list.offsetLeft;
-    scrollLeft = list.scrollLeft;
+    isDown = true
+    StartX = e.pageX - list.offsetLeft
+    scrollLeft = list.scrollLeft
 });
+
 list.addEventListener('mouseleave', () => {
-    isDown = false;
+    isDown = false
 });
+
 list.addEventListener('mouseup', () => {
-    isDown = false;
+    isDown = false
 });
+
 list.addEventListener('mousemove', (e) => {
     if(!isDown) return;
     e.preventDefault();
-    const x = e.pageX - list.offsetLeft;
-    const walk = x - StartX;
-    list.scrollLeft = scrollLeft - walk;
+    const x = e.pageX - list.offsetLeft
+    const walk = x - StartX
+    list.scrollLeft = scrollLeft - walk
 });
+
+let nbrCardsInSlider = list.children.length;
+let cardWidth = document.querySelector('.product-card').offsetWidth;
+let cardMargin = 37*2;
+let step = cardWidth + cardMargin;
+
+leftArrow.addEventListener('click', () => {
+    scrollLeft = list.scrollLeft
+    list.scrollLeft = scrollLeft - step
+
+    //rightArrow.children[0].setAttribute('fill', '#111111')
+    //leftArrow.children[0].setAttribute('fill', '#cecece')
+})
+
+rightArrow.addEventListener('click', () => {
+    scrollLeft = list.scrollLeft
+    list.scrollLeft = scrollLeft + step
+
+    leftArrow.children[0].setAttribute('fill', '#111111')
+    //rightArrow.children[0].setAttribute('fill', '#cecece')
+})
