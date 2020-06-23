@@ -5,9 +5,10 @@
     grid-template-areas: "col col col col col";
     justify-content: center;
     align-content: center;
+    column-gap: 10px;
+
 
     &__group-links {
-        padding: 0 8px;
         justify-self: self-start;
         width: 160px;
 
@@ -51,7 +52,7 @@
         margin-bottom: 25px;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 908px) {
         grid-template-columns: repeat(2, 50%);
         grid-template-areas: "col col" "col col" "col col";
     }
