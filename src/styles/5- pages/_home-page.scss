@@ -127,7 +127,7 @@
 }
 
 .spacing {
-    padding: 46px 0;
+    padding: 37px 0;
 }
 
 .container-card-ad {
@@ -226,7 +226,6 @@
 
 .title--center {
     text-align: center;
-    margin-bottom: 75px;
 }
 
 .services-grid-container {
@@ -235,7 +234,9 @@
     grid-template-areas: "col col col col";
     justify-content: center;
     align-content: center;
-    grid-gap: .8em;    
+    grid-gap: .8em;
+    margin-top: 90px;
+    
 
     @media only screen and (max-width: 768px) {
         grid-template-columns: repeat(2, 50%);
