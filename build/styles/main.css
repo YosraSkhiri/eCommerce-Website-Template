@@ -606,7 +606,7 @@ body {
       padding: 5px 0; } }
 
 .spacing {
-  padding: 37px 0; }
+  padding: 46px 0; }
 
 .container-card-ad {
   display: grid;
@@ -678,7 +678,8 @@ body {
       font-size: 20px; } }
 
 .title--center {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 75px; }
 
 .services-grid-container {
   display: grid;
@@ -686,8 +687,7 @@ body {
   grid-template-areas: "col col col col";
   justify-content: center;
   align-content: center;
-  grid-gap: .8em;
-  margin-top: 90px; }
+  grid-gap: .8em; }
   @media only screen and (max-width: 768px) {
     .services-grid-container {
       grid-template-columns: repeat(2, 50%);
