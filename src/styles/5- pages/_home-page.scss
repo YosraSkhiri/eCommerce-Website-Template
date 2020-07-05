@@ -226,27 +226,12 @@
 
 .title--center {
     text-align: center;
+    margin-bottom: 90px;
 }
 
-.services-grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-areas: "col col col col";
-    justify-content: center;
-    align-content: center;
+.items-4-grid-container {
     grid-gap: .8em;
-    margin-top: 90px;
-    
-
-    @media only screen and (max-width: 768px) {
-        grid-template-columns: repeat(2, 50%);
-        grid-template-areas: "col col" "col col";
-    }
-
-    @media only screen and (max-width: 375px){
-        grid-template-columns: 1fr;
-        grid-template-areas: "col";
-    }
+    @include items4-GridMedia(768px, 375px);
 }
 
 .service__grid-item {
@@ -279,4 +264,10 @@
     font-size: 13px;
     color: #808080;
     line-height: 1.8;
+}
+
+.products-grid-container {
+    align-items: center;
+    justify-items: center;
+    @include items4-GridMedia(1165px, 639px);
 }

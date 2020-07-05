@@ -11,3 +11,22 @@
       font-style: $style;
     }
 }
+
+@mixin items4-GridMedia($width1, $width2) {
+
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-areas: "col col col col";
+  justify-content: center;
+  align-content: center;
+
+  @media only screen and (max-width: $width1) {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "col col" "col col";
+    }
+
+  @media only screen and (max-width: $width2){
+      grid-template-columns: 1fr;
+      grid-template-areas: "col";
+  }
+}

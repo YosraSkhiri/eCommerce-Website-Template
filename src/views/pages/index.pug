@@ -81,7 +81,7 @@ block body
 
             .spacing
                 h1.section-title--default.title--center Why should you choose us?
-                .services-grid-container
+                .items-4-grid-container
                     .service__grid-item
                         .service-item__icon--lg
                             svg(xmlns="http://www.w3.org/2000/svg" width="36.777" height="21.718" viewBox="0 0 36.777 21.718")
@@ -125,4 +125,11 @@ block body
                             
                         h3.service-item__title--lg Free Shipping
                         p.service-item__txt--lg Designed to last, each of our products has been crafted with the finest materials.
-                    
+            
+            .spacing
+                h1.section-title--default.title--center Products in today
+                .products-grid-container
+                    +productCard()
+                    +productCard()
+                    +productCard()
+                    +productCard()
