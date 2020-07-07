@@ -22,15 +22,25 @@
     &--primary {
         background-color: $primary-color;
     }
+
+    &__tab--active {
+        border: 2px solid $primary-color;
+    }
+
+    &__tab--inactive {
+        color: $muted-text-color;
+    }
 }
 
 .btn-round {
     position: relative;
     display: inline-block;
-    width: 39px;
-    height: 39px;
+    width: 45px;
+    height: 45px;
     border-radius: 50px;
+    border: 1px solid $muted-text-color;
     cursor: pointer;
+    vertical-align: top;
 
     &__icon--center {
         position: absolute;

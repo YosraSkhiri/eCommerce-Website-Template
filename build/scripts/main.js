@@ -49,26 +49,28 @@ menuIcon.addEventListener('click', () => {
     menu.classList.toggle('menu-show')
 })
 
-window.onscroll = () => { 
-    if (document.body.scrollTop >= 150 || document.documentElement.scrollTop >= 150 ) {
-        navbar.classList.add('navbar--white')
-        logo.classList.add('fill-black')
-        logo.classList.remove('fill-white')
-
-        navIcons.forEach(svg => {
-            svg.classList.add('fill-black')
-            svg.classList.remove('fill-white')
-        })
-    } 
-    else {
-        navbar.classList.remove('navbar--white')
-        logo.classList.add('fill-white')
-        logo.classList.remove('fill-black')
-
-        navIcons.forEach(svg => {
-            svg.classList.remove('fill-black')
-            svg.classList.add('fill-white')
-        })
+if(navbar.id === "homePageNav") {
+    window.onscroll = () => { 
+        if (document.body.scrollTop >= 150 || document.documentElement.scrollTop >= 150 ) {
+            navbar.classList.add('navbar--white')
+            logo.classList.add('fill-black')
+            logo.classList.remove('fill-white')
+    
+            navIcons.forEach(svg => {
+                svg.classList.add('fill-black')
+                svg.classList.remove('fill-white')
+            })
+        } 
+        else {
+            navbar.classList.remove('navbar--white')
+            logo.classList.add('fill-white')
+            logo.classList.remove('fill-black')
+    
+            navIcons.forEach(svg => {
+                svg.classList.remove('fill-black')
+                svg.classList.add('fill-white')
+            })
+        }
     }
 }
 

@@ -34,6 +34,25 @@
     background-color: $light-bg-color;
 }
 
+.select-input {
+    padding: 15px 40px 15px 28px;
+    border-radius: 50px;
+    border: 1px solid $muted-text-color;
+    -webkit-appearance:none; /*For hiding default pointer of drop-down on Chrome*/
+    -moz-appearance:none;
+    cursor: pointer;
+    background-image: url("../images/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 1.2em top 50%;
+    text-transform: uppercase;
+}
+
+.number-input {
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 1px solid $muted-text-color;
+}
+
 .search-bar--input {
     display: inline-block;
     width: 415px;
