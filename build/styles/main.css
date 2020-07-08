@@ -914,14 +914,21 @@ body {
   font-size: 14px;
   line-height: 1.5; }
 
-.flex-tab {
-  max-width: 1000px;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  justify-items: center;
-  margin: auto; }
+.grid-tab {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-areas: "rating-score rating-byStars comments" "addOpinionbtn addOpinionbtn comments";
+  grid-gap: 10px; }
+  .grid-tab .rating-display__score {
+    grid-area: rating-score; }
+  .grid-tab .rating-display__bars {
+    grid-area: rating-byStars; }
+  .grid-tab .btn--primary {
+    grid-area: addOpinionbtn;
+    align-self: flex-start;
+    justify-self: center; }
+  .grid-tab .comments {
+    grid-area: comments; }
 
 .rating-display__score {
   text-align: center; }
@@ -954,8 +961,11 @@ body {
     background-color: #FBB03B;
     height: 2px; }
 
+.comment {
+  display: flex;
+  margin-bottom: 38px; }
+
 .comment__user-photo {
-  display: inline-block;
   width: 40px;
   height: 40px;
   margin-right: 26px; }
@@ -964,7 +974,7 @@ body {
     border-radius: 50px; }
 
 .comment__content {
-  display: inline-block;
+  max-width: 500px;
   font-size: 12px; }
   .comment__content .comment__user-name {
     font-weight: 600;
