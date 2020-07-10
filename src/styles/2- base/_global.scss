@@ -27,6 +27,10 @@ body {
     align-items: center;
 }
 
+.top-spacing {
+    margin-top: 130px;
+}
+
 .tag {
     display: inline-block;
     padding: 8px 10px;
@@ -37,4 +41,27 @@ body {
     color: $light-text-color;
     background-color: $secondary-color;
     text-transform: uppercase;
+}
+
+.breadcrumbs {
+    align-self: flex-start;
+
+    .breadcrumb {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .breadcrumb:not(:last-child) {
+        color: #b2b2b2;
+    }
+
+    .breadcrumb:not(:last-child)::after {
+        content: '/';
+        padding: 0 12px;
+        color: #b2b2b2;
+    }
+
+    &__row {
+        padding-top: 43px;
+    }
 }

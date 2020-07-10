@@ -1,34 +1,8 @@
-.top-spacing {
-    margin-top: 130px;
-}
-
-.breadcrumbs {
-    list-style: none;
-    align-self: flex-start;
-
-
-    .breadcrumb {
-        display: inline-block;
-        font-size: 13px;
-    }
-
-    .breadcrumb:not(:last-child) {
-        color: #b2b2b2;
-    }
-
-    .breadcrumb:not(:last-child)::after {
-        content: '/';
-        padding: 0 12px;
-        color: #b2b2b2;
-    }
-}
-
-.breadcrumbs-row {
+.breadcrumbs__flex-row {
     display: flex;
     justify-items: center;
     align-items: center;
     justify-content: space-between;
-    padding-top: 43px;
 }
 
 .service__products,
@@ -37,7 +11,9 @@
     justify-items: center;
     align-items: center;
     font-size: 12px;
+}
 
+.service__products-item {
     &__icon {
         margin-right: 27px;
     }
@@ -48,10 +24,9 @@
         margin-bottom: 7px;
     }
 
-}
-
-.service__products-item:not(:last-child) {
-    margin-right: 100px;
+    &:not(:last-child) {
+        margin-right: 100px;
+    }
 }
 
 .product-display {
@@ -103,44 +78,45 @@
             margin-right: 2.5em;
         }
     }
-}
 
-.product-display__first-row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    &__first-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    
+        .product__id {
+            margin-bottom: 16px;
+            text-align: right;
+            font-size: 12px;
+            color: $muted-text-color;
+        }
+    }
 
-    .product__id {
-        margin-bottom: 16px;
-        text-align: right;
-        font-size: 12px;
-        color: $muted-text-color;
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+    
+    &__price {
+        font-size: 2em;
+    
+        &.product-card__price--old {
+            text-decoration: line-through;
+        }
+    }
+
+    &__row {
+        margin-top: 53px;
+    
+        &-title {
+            display: block;
+            margin-bottom: 1em;
+            font-size: 13px;
+        }
     }
 }
 
-.product-display__prices {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-}
-
-.product-display__price {
-    font-size: 2em;
-
-    &.product-card__price--old {
-        text-decoration: line-through;
-    }
-}
-
-.product-display__row {
-    margin-top: 53px;
-
-    &-title {
-        display: block;
-        margin-bottom: 1em;
-        font-size: 13px;
-    }
-}
 
 .color-item {
     position: relative;
@@ -218,13 +194,18 @@
     grid-template-areas: "rating-score rating-byStars comments"
                          "addOpinionbtn addOpinionbtn comments";
     grid-gap: 10px;
+    justify-content: center;
     
     .rating-display__score {
         grid-area: rating-score;
+        justify-self: end;
+        padding-right: 35px;
     }
 
     .rating-display__bars {
         grid-area: rating-byStars;
+        justify-self: start;
+        padding-left: 35px;
     }
 
     .btn--primary {
@@ -261,53 +242,53 @@
 
 .rating-bar {
     margin-bottom: 12px;
-}
 
-.star {
-    display: inline-block;
-    margin-right: 9px;
-}
+    .star {
+        display: inline-block;
+        margin-right: 9px;
+    }
 
-.bar {
-    display: inline-block;
-    width: 142px;
-    height: 2px;
-    background-color: $muted-text-color;
-    margin: 4px 0;
-    margin-left: 19px;
-
-    .percentage-bar {
-        background-color: $primary-color;
+    .bar {
+        display: inline-block;
+        width: 142px;
         height: 2px;
+        background-color: $muted-text-color;
+        margin: 4px 0;
+        margin-left: 19px;
+    
+        .percentage-bar {
+            background-color: $primary-color;
+            height: 2px;
+        }
     }
 }
 
 .comment {
     display: flex;
     margin-bottom: 38px;
-}
 
-.comment__user-photo {
-    width: 40px;
-    height: 40px;
-    margin-right: 26px;
-    img {
-        width: 100%;
-        border-radius: 50px;
-    }
-}
-
-.comment__content {
-    max-width: 500px;
-    font-size: 12px;
-
-    .comment__user-name {
-        font-weight: 600;
-        margin-bottom: 6px;
+    &__user-photo {
+        width: 40px;
+        height: 40px;
+        margin-right: 26px;
+        img {
+            width: 100%;
+            border-radius: 50px;
+        }
     }
 
-    .comment__txt {
-        margin-top: 12px;
-        line-height: 1.5;
+    &__content {
+        max-width: 500px;
+        font-size: 12px;
+
+        .comment__user-name {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .comment__txt {
+            margin-top: 12px;
+            line-height: 1.5;
+        }
     }
 }
