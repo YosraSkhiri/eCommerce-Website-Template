@@ -787,6 +787,10 @@ body {
   justify-items: center;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 1096px) {
+    .breadcrumbs__flex-row {
+      flex-direction: column;
+      align-items: flex-start; } }
 
 .service__products,
 .service__products-item {
@@ -794,6 +798,10 @@ body {
   justify-items: center;
   align-items: center;
   font-size: 12px; }
+  @media only screen and (max-width: 1096px) {
+    .service__products,
+    .service__products-item {
+      margin-top: 20px; } }
 
 .service__products-item__icon {
   margin-right: 27px; }
@@ -810,22 +818,33 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 44px; }
+  @media only screen and (max-width: 1096px) {
+    .product-display {
+      flex-direction: column;
+      justify-content: center; } }
   .product-display__details {
     flex: 1; }
-  .product-display__brand-name {
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px; }
+    @media only screen and (max-width: 1096px) {
+      .product-display__details {
+        align-self: stretch;
+        margin-top: 26px; } }
   .product-display__images {
     display: flex;
     margin-right: 60px; }
+    @media only screen and (max-width: 1096px) {
+      .product-display__images {
+        align-self: flex-start; } }
+  .product-display__side-images {
+    max-height: 440px;
+    overflow-y: scroll; }
   .product-display__main-image {
     width: 440px;
     height: 440px; }
   .product-display__side-image {
     width: 97px;
     height: 97px;
-    margin-right: 28px; }
+    margin-right: 28px;
+    margin-bottom: 20px; }
   .product-display__main-image, .product-display__side-image {
     background-image: url("../images/product-page.png");
     background-position: 0 0;
@@ -851,10 +870,20 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 8px; }
+    @media only screen and (max-width: 1288px) {
+      .product-display__prices {
+        flex-direction: column; } }
   .product-display__price {
     font-size: 2em; }
     .product-display__price.product-card__price--old {
       text-decoration: line-through; }
+  .product-display__brand-name {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px; }
+    @media only screen and (max-width: 1288px) {
+      .product-display__brand-name {
+        margin-top: 12px; } }
   .product-display__row {
     margin-top: 53px; }
     .product-display__row-title {
