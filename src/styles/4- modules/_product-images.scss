@@ -40,11 +40,8 @@
             overflow-x: scroll;
             scroll-behavior: smooth;
             margin-top: 10px;
-
-            flex-basis: 100%;
-
             display: grid;
-            grid-auto-flow: column;
+            grid-auto-flow: column; //read about this!! 
 
             &::-webkit-scrollbar {
                 height: 10px;
