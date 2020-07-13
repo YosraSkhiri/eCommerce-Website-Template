@@ -42,17 +42,7 @@ block body
             
 
             .product-display
-                .product-display__images
-                    .product-display__side-images
-                        .product-display__side-image
-                        .product-display__side-image
-                        .product-display__side-image
-                        .product-display__side-image
-                        .product-display__side-image
-                        .product-display__side-image
-                        .product-display__side-image
-                        .product-display__side-image
-                    .product-display__main-image
+                include ../components/product-images
 
                 .product-display__details
                     .product-display__first-row
@@ -212,3 +202,5 @@ block body
                     a.btn.btn--default(href="#") Show more
 
                 include ../components/product-cards-slider
+
+    script(src="scripts/product-page.js")
