@@ -96,7 +96,7 @@ block body
             .product-page__tab
                 .product-page__tab-actions
                     button.btn.btn__tab--active#product-description-btn Description
-                    button(class="btn btn__tab--inactive")
+                    button#product-reviews-btn(class="btn btn__tab--inactive")
                         | Reviews 
                         span (2)
                 .product-page__tab-content.flex--center#product-description
@@ -125,7 +125,7 @@ block body
                         p.default-paragraph Body: 98% COTTON - 2% ELASTANE
                         img(src="images/product-info.png", alt="product information")
 
-                .product-page__tab-content.grid-tab#product-reviews
+                .product-page__tab-content.grid-tab#product-reviews(style="display: none;")
                     .rating-display__score
                         .rating-score 4.5
                         .rating-score-stars

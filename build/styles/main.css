@@ -400,7 +400,8 @@ body {
   .btn__tab--active {
     border: 2px solid #FBB03B; }
   .btn__tab--inactive {
-    color: #CECECE; }
+    color: #CECECE;
+    border: none; }
 
 .btn-round {
   position: relative;
