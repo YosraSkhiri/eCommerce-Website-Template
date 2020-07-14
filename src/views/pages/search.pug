@@ -1,0 +1,80 @@
+extends ../includes/layout
+block title
+    title eCommerce Website Template
+    
+block body
+    +navbar("white-bg", "defaultNav")
+
+    .top-spacing
+        .container
+            .breadcrumbs__flex-row.breadcrumbs__row
+                ol.breadcrumbs
+                    li.breadcrumb
+                        a(href="#")
+                            svg(xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15")
+                                path(d="M7.028,12.906l.327-.276v7.745A.625.625,0,0,0,7.98,21H19.02a.625.625,0,0,0,.625-.625V12.63l.327.276a.625.625,0,0,0,.806-.955l-3-2.533V7.039a.625.625,0,1,0-1.25,0V8.363L13.9,6.147a.625.625,0,0,0-.806,0l-6.875,5.8a.625.625,0,1,0,.806.955ZM12.1,19.75V15.238H14.9V19.75ZM13.5,7.443l4.895,4.132V19.75H16.147V14.613a.625.625,0,0,0-.625-.625H11.478a.625.625,0,0,0-.625.625V19.75H8.605V11.575Z" transform="translate(-6 -6)" fill="#b2b2b2")
+                    li.breadcrumb
+                        a(href="#") All products
+
+            .search-flex-layout
+                .filters-container
+                    .filter-container
+                        .filter-title-row#product-typ-btn
+                            .filter-title PRODUCT TYPE
+                            .filter-title-arrow
+                                svg(xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475")
+                                    g(transform="translate(-26.464 45.94) rotate(-90)")
+                                        path(d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)")
+                        .filter#product-tab
+                            .checkbox-wrapper
+                                label.checkbox-label(for="tshirts") T-Shirts&nbsp;
+                                    span.muted-txt (411)
+                                    input.checkbox-input(type="checkbox", name="tshirts", id="tshirts") 
+                                    span.checkbox-custom(role="checkbox" aria-checked="false" aria-labelledby="tshirts")
+                                        svg(xmlns="http://www.w3.org/2000/svg" width="13.371" height="11.063" viewBox="0 0 13.371 11.063")
+                                            path(d="M11.763.25l-.876.929-6.1,6.473L2.955,5.821l-.9-.9-1.8,1.8.9.9L3.91,10.384l.929.929.9-.955,7-7.428L13.62,2Z" transform="translate(-0.249 -0.25)" fill="#fff")
+                                        
+                            .checkbox-wrapper
+                                label.checkbox-label(for="sweatshirts") Sweatshirts&nbsp;
+                                    span.muted-txt (131)
+                                    input.checkbox-input(type="checkbox", name="sweatshirts", id="sweatshirts") 
+                                    span.checkbox-custom(role="checkbox" aria-checked="false" aria-labelledby="sweatshirts")
+                                        svg(xmlns="http://www.w3.org/2000/svg" width="13.371" height="11.063" viewBox="0 0 13.371 11.063")
+                                            path(d="M11.763.25l-.876.929-6.1,6.473L2.955,5.821l-.9-.9-1.8,1.8.9.9L3.91,10.384l.929.929.9-.955,7-7.428L13.62,2Z" transform="translate(-0.249 -0.25)" fill="#fff")
+                                        
+                            .checkbox-wrapper
+                                label.checkbox-label(for="tank-tops") Tank Tops&nbsp;
+                                    span.muted-txt (56)
+                                    input.checkbox-input(type="checkbox", name="tank-tops", id="tank-tops") 
+                                    span.checkbox-custom(role="checkbox" aria-checked="false" aria-labelledby="tank-tops")
+                                        svg(xmlns="http://www.w3.org/2000/svg" width="13.371" height="11.063" viewBox="0 0 13.371 11.063")
+                                            path(d="M11.763.25l-.876.929-6.1,6.473L2.955,5.821l-.9-.9-1.8,1.8.9.9L3.91,10.384l.929.929.9-.955,7-7.428L13.62,2Z" transform="translate(-0.249 -0.25)" fill="#fff")
+                                        
+                            .checkbox-wrapper
+                                label.checkbox-label(for="dress-shirts") Dress shirts&nbsp;
+                                    span.muted-txt (8)
+                                    input.checkbox-input(type="checkbox", name="dress-shirts", id="dress-shirts") 
+                                    span.checkbox-custom(role="checkbox" aria-checked="false" aria-labelledby="dress-shirts")
+                                        svg(xmlns="http://www.w3.org/2000/svg" width="13.371" height="11.063" viewBox="0 0 13.371 11.063")
+                                            path(d="M11.763.25l-.876.929-6.1,6.473L2.955,5.821l-.9-.9-1.8,1.8.9.9L3.91,10.384l.929.929.9-.955,7-7.428L13.62,2Z" transform="translate(-0.249 -0.25)" fill="#fff")
+                                        
+                    .filter-container
+                        .filter-title-row
+                            .filter-title PRICE
+                            .filter-title-arrow
+                                svg(xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475")
+                                    g(transform="translate(-26.464 45.94) rotate(-90)")
+                                        path(d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)")
+                        .filter
+                            input(type="range" min="1" max="100" value="50" id="myRange")
+
+                .search-display
+                    .search-row
+                    .search-grid-display
+                        -for (var i=0; i<10; i++) {
+                            +productCard()
+                        - }
+                            
+                    .pagination
+
+    script(src="scripts/filter.js")

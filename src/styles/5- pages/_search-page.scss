@@ -1,0 +1,56 @@
+.search-flex-layout {
+    width: 100%;
+    display: flex;
+}
+
+.filter {
+    padding: 0 31px 24px 31px;
+    transition: all 0.4s ease-out;
+    opacity: 1;
+    height: fit-content;
+}
+
+.filter-container {
+    border: 1px solid $muted-text-color;
+    min-width: 300px;
+    margin-bottom: 13px;
+}
+
+.filter-title-row {
+    cursor: pointer;
+    padding: 28px 31px 8px 31px;
+}
+
+.filter-title {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.filter-title-arrow {
+    float: right;
+    & svg {
+        transform: translateY(-50%);
+    }
+}
+
+.search-grid-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.muted-txt {
+    color: $muted-text-color;
+}
+
+.filter-toggle {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+}
