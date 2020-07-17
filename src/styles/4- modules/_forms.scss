@@ -107,3 +107,21 @@
         cursor: pointer;
     }
 }
+
+.auth-input {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid $muted-text-color;
+}
+
+.input-w-icon {
+    position: relative;
+
+    .input-icon {
+        position: absolute;
+        top: 27%;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+

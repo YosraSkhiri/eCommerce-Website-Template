@@ -78,3 +78,46 @@
         }
     }
 }
+
+.btn-social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    padding: 18px 58px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 537px) {
+        justify-content: center;
+
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        
+    }
+
+    &__icon {
+        margin-right: 23px;
+    }
+}
+
+.btn-fb {
+    background-color: #3B5998;
+    color: white;
+}
+
+.btn-gmail {
+    border: 1px solid #F1584D;
+}
+
+.auth-btn {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-transform: none;
+}
+
