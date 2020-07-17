@@ -1283,4 +1283,15 @@ body {
     .back-link {
       margin-top: 10px; } }
 
+.top-margin {
+  margin-top: 52px; }
+
+.info-link {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 22px;
+  text-align: center;
+  font-size: 13px; }
+
 /*# sourceMappingURL=main.css.map */
