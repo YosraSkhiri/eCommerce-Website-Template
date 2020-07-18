@@ -1,0 +1,27 @@
+.page-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+    margin-bottom: 66px;
+}
+
+
+.shopping-cart-table {
+    width: 100%;
+}
+
+.cel-title {
+    font-size: 14px;
+    color: $dark-gray;
+    margin-bottom: 30px;
+    text-align: center;
+
+    &:first-child {
+        text-align: start;
+    }
+}
+
+.cel-title:first-child() {
+    grid-column: span 2;
+}

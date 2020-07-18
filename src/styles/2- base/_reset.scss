@@ -30,3 +30,20 @@ textarea {
 address {
 	font-style: normal;
 }
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+    border: none;
+    border-collapse: inherit;
+    border-spacing: 0;
+    border-color: inherit;
+    text-align: left;
+    font-weight: inherit;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+}

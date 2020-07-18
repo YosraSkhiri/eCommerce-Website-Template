@@ -26,6 +26,22 @@ textarea {
 address {
   font-style: normal; }
 
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0; }
+
 @font-face {
   font-family: "poppins";
   src: url("../fonts/poppins-light-webfont.eot");
@@ -120,6 +136,10 @@ body {
 
 .muted-txt {
   color: #CECECE; }
+
+.side-title {
+  font-size: 20px;
+  font-weight: 600; }
 
 .navbar {
   position: fixed;
@@ -1293,5 +1313,26 @@ body {
   margin-top: 22px;
   text-align: center;
   font-size: 13px; }
+
+.page-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 38px;
+  margin-bottom: 66px; }
+
+.shopping-cart-table {
+  width: 100%; }
+
+.cel-title {
+  font-size: 14px;
+  color: #7D7D7D;
+  margin-bottom: 30px;
+  text-align: center; }
+  .cel-title:first-child {
+    text-align: start; }
+
+.cel-title:first-child {
+  grid-column: span 2; }
 
 /*# sourceMappingURL=main.css.map */
