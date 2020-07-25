@@ -1,19 +1,27 @@
 .search-flex-layout {
     width: 100%;
     display: flex;
+    margin-top: 44px;
+
+    @media only screen and (max-width: 710px) {
+        flex-direction: column;
+    }
 }
 
 .filter {
     padding: 0 31px 24px 31px;
-    transition: all 0.4s ease-out;
-    opacity: 1;
-    height: fit-content;
+    max-height: 250px;
+    transition: max-height 0.6s ease;
 }
 
 .filter-container {
     border: 1px solid $muted-text-color;
     min-width: 300px;
     margin-bottom: 13px;
+
+    @media only screen and (max-width: 710px) {
+        min-width: 100%;
+    }
 }
 
 .filter-title-row {
@@ -36,6 +44,45 @@
     }
 }
 
+.search-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5em;
+
+    @media only screen and (max-width: 1248px) {
+        flex-direction: column;
+    }
+
+    &__form {
+        margin-bottom: 35px;
+        @media only screen and (max-width: 1248px) {
+            margin-top: 35px;
+        }
+    }
+
+    &__label {
+        font-size: 13px;
+        font-weight: bold;
+        margin-right: 14px;
+    }
+
+    .row-filter {
+        display: inline-block;
+
+        select:not(:last-child) {
+            margin-right: 36px;
+        }
+
+        @media only screen and (max-width: 979px) {
+            display: block;
+        }
+    }
+}
+
+.search-display {
+    flex: 1;
+}
+
 .search-grid-display {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
@@ -46,7 +93,74 @@
 }
 
 .filter-toggle {
-    height: 0;
+    max-height: 0px;
     opacity: 0;
-    padding: 0;
+    padding: 0px;
+}
+
+.radio-btn-container {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.filter-radio__label {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid $muted-text-color;
+    font-size: 13px;
+    cursor: pointer;
+
+    & > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.input-r {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    &:checked ~ .filter-radio__label {
+        border-color: $dark-gray;
+    }
+}
+
+.color {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid $muted-text-color;
+    
+
+    &.black {
+        background-color: black;
+    }
+
+    &.maroon {
+        background-color: #6F3E18;
+    }
+
+    &.light-maroon {
+        background-color: #D4BE8D;
+    }
+
+    &.grey {
+        background-color: #838383;
+    }
+
+    &.white {
+        background-color: white;
+    }
+
+    &.blue {
+        background-color: #0F73AD;
+    }
 }

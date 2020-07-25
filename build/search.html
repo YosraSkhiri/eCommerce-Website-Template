@@ -329,7 +329,7 @@
             </div>
             <div class="filter-container">
               <div class="filter-title-row">
-                <div class="filter-title">PRICE</div>
+                <div class="filter-title">Size</div>
                 <div class="filter-title-arrow">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475">
                     <g transform="translate(-26.464 45.94) rotate(-90)">
@@ -339,12 +339,94 @@
                 </div>
               </div>
               <div class="filter">
-                <input type="range" min="1" max="100" value="50" id="myRange">
+                <div class="radio-btn-container">
+                  <input class="input-r" id="xs" type="radio" name="size">
+                  <label class="filter-radio__label" for="xs"> <span>xs</span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="s" type="radio" name="size">
+                  <label class="filter-radio__label" for="s"> <span>s</span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="m" type="radio" name="size">
+                  <label class="filter-radio__label" for="m"> <span>m</span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="l" type="radio" name="size">
+                  <label class="filter-radio__label" for="l"> <span>l</span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="xl" type="radio" name="size">
+                  <label class="filter-radio__label" for="xl"> <span>xl</span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="xxl" type="radio" name="size">
+                  <label class="filter-radio__label" for="xxl"> <span>xxl</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-container">
+              <div class="filter-title-row">
+                <div class="filter-title">Color</div>
+                <div class="filter-title-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475">
+                    <g transform="translate(-26.464 45.94) rotate(-90)">
+                      <path d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="filter">
+                <div class="radio-btn-container">
+                  <input class="input-r" id="black" type="radio" name="color">
+                  <label class="filter-radio__label" for="black"> <span class="color black"></span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="maroon" type="radio" name="color">
+                  <label class="filter-radio__label" for="maroon"> <span class="color maroon"></span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="lightMaroon" type="radio" name="color">
+                  <label class="filter-radio__label" for="lightMaroon"> <span class="color light-maroon"></span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="grey" type="radio" name="color">
+                  <label class="filter-radio__label" for="grey"> <span class="color grey"></span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="white" type="radio" name="color">
+                  <label class="filter-radio__label" for="white"> <span class="color white"></span></label>
+                </div>
+                <div class="radio-btn-container">
+                  <input class="input-r" id="blue" type="radio" name="color">
+                  <label class="filter-radio__label" for="blue"> <span class="color blue"></span></label>
+                </div>
               </div>
             </div>
           </div>
           <div class="search-display">
-            <div class="search-row"></div>
+            <div class="search-row">
+              <h1 class="section-title--default">Men's Tops (133)</h1>
+              <div class="search-row__form">
+                <div class="row-filter">
+                  <label class="search-row__label" for="nbProducts">Show products:</label>
+                  <select class="select-input" id="nbProducts" name="nbProducts">
+                    <option value="10">10</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                  </select>
+                </div>
+                <div class="row-filter">
+                  <label class="search-row__label" for="sort">Sort:</label>
+                  <select class="select-input" id="sort" name="sort">
+                    <option value="popular">POPULAR</option>
+                    <option value="on sale">ON SALE</option>
+                    <option value="most recent">MOST RECENT</option>
+                  </select>
+                </div>
+              </div>
+            </div>
             <div class="search-grid-display">
               <div class="product-card">
                 <div class="product-card__img">
@@ -472,22 +554,15 @@
                   <h2 class="product-card__title"> <a href="#">T-Shirt Summer Vibes</a></h2><span class="product-card__price">$119.99</span>
                 </div>
               </div>
-              <div class="product-card">
-                <div class="product-card__img">
-                  <div class="product-card__actions" style="justify-content: flex-end;">
-                    <div class="btn-round btn-round--secondary">
-                      <svg class="btn-round__icon--center" xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" viewBox="0 0 16.5 16.5">
-                        <path d="M17.679,6A4.631,4.631,0,0,0,14.25,7.554,4.631,4.631,0,0,0,10.821,6,5.045,5.045,0,0,0,6,11.233c0,4.212,7.478,10.817,7.8,11.1a.688.688,0,0,0,.9.008c.319-.27,7.805-6.664,7.805-11.1A5.045,5.045,0,0,0,17.679,6ZM14.257,20.9c-2.271-2.079-6.882-6.877-6.882-9.663a3.673,3.673,0,0,1,3.446-3.858,3.361,3.361,0,0,1,2.843,1.679.687.687,0,0,0,1.172,0,3.362,3.362,0,0,1,2.843-1.679,3.673,3.673,0,0,1,3.446,3.858C21.125,14.179,16.527,18.876,14.257,20.9Z" transform="translate(-6 -6)"></path>
-                      </svg>
-                    </div>
-                  </div><a href="#"><img src="images/model.png" alt="product image"/></a>
-                </div>
-                <div class="product-card__content">
-                  <h2 class="product-card__title"> <a href="#">T-Shirt Summer Vibes</a></h2><span class="product-card__price">$119.99</span>
-                </div>
-              </div>
             </div>
-            <div class="pagination"></div>
+            <div class="pagination"><span>Page</span>
+              <ol>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">45</a></li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>

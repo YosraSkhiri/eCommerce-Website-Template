@@ -60,21 +60,106 @@ block body
                                         
                     .filter-container
                         .filter-title-row
-                            .filter-title PRICE
+                            .filter-title Size
                             .filter-title-arrow
                                 svg(xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475")
                                     g(transform="translate(-26.464 45.94) rotate(-90)")
                                         path(d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)")
                         .filter
-                            input(type="range" min="1" max="100" value="50" id="myRange")
+                            .radio-btn-container
+                                input.input-r#xs(type="radio", name="size")
+                                label.filter-radio__label(for="xs") 
+                                    span xs
+                            .radio-btn-container
+                                input.input-r#s(type="radio", name="size")
+                                label.filter-radio__label(for="s") 
+                                    span s
+                            .radio-btn-container
+                                input.input-r#m(type="radio", name="size")
+                                label.filter-radio__label(for="m") 
+                                    span m
+                            .radio-btn-container
+                                input.input-r#l(type="radio", name="size")
+                                label.filter-radio__label(for="l") 
+                                    span l
+                            .radio-btn-container
+                                input.input-r#xl(type="radio", name="size")
+                                label.filter-radio__label(for="xl") 
+                                    span xl
+                            .radio-btn-container
+                                input.input-r#xxl(type="radio", name="size")
+                                label.filter-radio__label(for="xxl") 
+                                    span xxl
+                                
+
+
+                    .filter-container
+                        .filter-title-row
+                            .filter-title Color
+                            .filter-title-arrow
+                                svg(xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475")
+                                    g(transform="translate(-26.464 45.94) rotate(-90)")
+                                        path(d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)")
+                        .filter
+                            .radio-btn-container
+                                input.input-r#black(type="radio", name="color")
+                                label.filter-radio__label(for="black") 
+                                    span.color.black
+                            .radio-btn-container
+                                input.input-r#maroon(type="radio", name="color")
+                                label.filter-radio__label(for="maroon") 
+                                    span.color.maroon
+                            .radio-btn-container
+                                input.input-r#lightMaroon(type="radio", name="color")
+                                label.filter-radio__label(for="lightMaroon") 
+                                    span.color.light-maroon
+                            .radio-btn-container
+                                input.input-r#grey(type="radio", name="color")
+                                label.filter-radio__label(for="grey") 
+                                    span.color.grey
+                            .radio-btn-container
+                                input.input-r#white(type="radio", name="color")
+                                label.filter-radio__label(for="white") 
+                                    span.color.white
+                            .radio-btn-container
+                                input.input-r#blue(type="radio", name="color")
+                                label.filter-radio__label(for="blue") 
+                                    span.color.blue
 
                 .search-display
                     .search-row
+                        h1.section-title--default Men's Tops (133)
+                        .search-row__form
+                            .row-filter
+                                label.search-row__label(for="nbProducts") Show products:
+                                select#nbProducts.select-input(name="nbProducts")
+                                    option(value="10") 10
+                                    option(value="50") 50
+                                    option(value="100") 100
+                                    option(value="200") 200
+                                    
+                            .row-filter
+                                label.search-row__label(for="sort") Sort:
+                                select#sort.select-input(name="sort")
+                                    option(value="popular") POPULAR
+                                    option(value="on sale") ON SALE
+                                    option(value="most recent") MOST RECENT
+
                     .search-grid-display
-                        -for (var i=0; i<10; i++) {
+                        -for (var i=0; i<9; i++) {
                             +productCard()
                         - }
                             
                     .pagination
+                        span Page
+                        ol
+                            li
+                                a(href="#") 1
+                            li
+                                a(href="#") 2
+                            li
+                                a(href="#") ...
+                            li
+                                a(href="#") 45
 
     script(src="scripts/filter.js")
