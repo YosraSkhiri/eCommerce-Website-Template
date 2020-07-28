@@ -439,7 +439,7 @@ body {
   font-size: 14px;
   cursor: pointer; }
 
-.auth-input {
+.default-input {
   width: 100%;
   margin-bottom: 15px;
   border: 1px solid #CECECE; }
@@ -451,6 +451,12 @@ body {
     top: 27%;
     right: 20px;
     cursor: pointer; }
+
+.label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px; }
 
 .btn {
   display: inline-block;
@@ -1499,5 +1505,10 @@ body {
       align-items: flex-start; }
       .page-row-bottom > div {
         margin-bottom: 1.5em; } }
+
+.address-form__row {
+  display: flex;
+  gap: 4em;
+  margin-bottom: 26px; }
 
 /*# sourceMappingURL=main.css.map */

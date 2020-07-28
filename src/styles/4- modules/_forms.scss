@@ -108,7 +108,7 @@
     }
 }
 
-.auth-input {
+.default-input {
     width: 100%;
     margin-bottom: 15px;
     border: 1px solid $muted-text-color;
@@ -123,5 +123,12 @@
         right: 20px;
         cursor: pointer;
     }
+}
+
+.label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
