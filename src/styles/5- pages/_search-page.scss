@@ -22,11 +22,19 @@
     @media only screen and (max-width: 710px) {
         min-width: 100%;
     }
+
+    .checkbox-wrapper:first-child {
+        margin-top: 0;
+    }
+
+    .checkbox-wrapper:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .filter-title-row {
     cursor: pointer;
-    padding: 28px 31px 8px 31px;
+    padding: 28px 31px;
 }
 
 .filter-title {
@@ -202,4 +210,8 @@
         padding: 11px 17px;
         border: 2px solid $muted-text-color;
     }
+}
+
+.rotate {
+    transform: rotate(180deg);
 }

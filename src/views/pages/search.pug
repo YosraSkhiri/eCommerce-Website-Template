@@ -25,7 +25,7 @@ block body
                                 svg(xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475")
                                     g(transform="translate(-26.464 45.94) rotate(-90)")
                                         path(d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)")
-                        .filter#product-tab
+                        .filter#product-tab(style="display: block;")
                             .checkbox-wrapper
                                 label.checkbox-label(for="tshirts") T-Shirts&nbsp;
                                     span.muted-txt (411)
@@ -59,13 +59,13 @@ block body
                                             path(d="M11.763.25l-.876.929-6.1,6.473L2.955,5.821l-.9-.9-1.8,1.8.9.9L3.91,10.384l.929.929.9-.955,7-7.428L13.62,2Z" transform="translate(-0.249 -0.25)" fill="#fff")
                                         
                     .filter-container
-                        .filter-title-row
+                        .filter-title-row#product-typ-btn
                             .filter-title Size
                             .filter-title-arrow
                                 svg(xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475")
                                     g(transform="translate(-26.464 45.94) rotate(-90)")
                                         path(d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)")
-                        .filter
+                        .filter#product-tab
                             .radio-btn-container
                                 input.input-r#xs(type="radio", name="size")
                                 label.filter-radio__label(for="xs") 
@@ -94,13 +94,13 @@ block body
 
 
                     .filter-container
-                        .filter-title-row
+                        .filter-title-row#product-typ-btn
                             .filter-title Color
                             .filter-title-arrow
                                 svg(xmlns="http://www.w3.org/2000/svg" width="11.34" height="6.475" viewBox="0 0 11.34 6.475")
                                     g(transform="translate(-26.464 45.94) rotate(-90)")
                                         path(d="M45.657,32.815l-4.739,4.739a.852.852,0,0,1-1.2-1.2l4.216-4.216-4.216-4.216a.852.852,0,0,1,1.2-1.2l4.739,4.739A.963.963,0,0,1,45.657,32.815Z" transform="translate(0 0)")
-                        .filter
+                        .filter#product-tab
                             .radio-btn-container
                                 input.input-r#black(type="radio", name="color")
                                 label.filter-radio__label(for="black") 

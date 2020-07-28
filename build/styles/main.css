@@ -1217,10 +1217,14 @@ body {
   @media only screen and (max-width: 710px) {
     .filter-container {
       min-width: 100%; } }
+  .filter-container .checkbox-wrapper:first-child {
+    margin-top: 0; }
+  .filter-container .checkbox-wrapper:last-child {
+    margin-bottom: 0; }
 
 .filter-title-row {
   cursor: pointer;
-  padding: 28px 31px 8px 31px; }
+  padding: 28px 31px; }
 
 .filter-title {
   display: inline-block;
@@ -1349,6 +1353,9 @@ body {
   .page-num > a {
     padding: 11px 17px;
     border: 2px solid #CECECE; }
+
+.rotate {
+  transform: rotate(180deg); }
 
 .auth-block--center {
   max-width: 448px;
