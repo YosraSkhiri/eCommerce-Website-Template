@@ -185,3 +185,21 @@
 .search-title {
     font-size: 24px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 52px 0;
+
+    span {
+        margin-right: 1.5em;
+    }
+}
+
+.page-num {
+    display: inline-block;
+    & > a {
+        padding: 11px 17px;
+        border: 2px solid $muted-text-color;
+    }
+}
