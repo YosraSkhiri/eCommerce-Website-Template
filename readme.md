@@ -1,4 +1,4 @@
-# An eCommerce Website Template
+#An eCommerce Website Template
 Made with Pug and Sass, it containes 8 pages:
 - [Home page] (https://pages.github.com/)
 - [Login page] (https://pages.github.com/)
