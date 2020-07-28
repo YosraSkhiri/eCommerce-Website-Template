@@ -4,11 +4,33 @@
     align-items: center;
     padding-top: 38px;
     margin-bottom: 66px;
+
+    @media only screen and (max-width: 876px) {
+        flex-direction: column;
+
+        & > h1 {
+            margin-bottom: 1em;
+        }
+    }
 }
 
 
 .shopping-cart-table {
     width: 100%;
+    margin-bottom: 48px;
+    tbody td {
+        padding-top: 32px;
+        font-size: 14px;
+    }
+
+    td:not(:first-child) {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 876px) {
+        //width: 100px;
+        overflow-y: scroll;
+    }
 }
 
 .cel-title {
@@ -24,4 +46,53 @@
 
 .cel-title:first-child() {
     grid-column: span 2;
+}
+
+.product-cart {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+
+    &__info {
+        margin-left: 32px;
+    }
+
+    &__info-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: .5em;
+    }
+
+    &__info-nb {
+        font-size: 13px;
+        color: $dark-gray;
+    }
+}
+
+.cancel-btn {
+    cursor: pointer;
+}
+
+.total-sum__title {
+    margin-right: 32px;
+    font-weight: 400;
+}
+
+.total-sum__nb {
+    font-weight: 600;
+}
+
+.page-row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 876px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        & > div {
+            margin-bottom: 1.5em;
+        }
+    }
 }
