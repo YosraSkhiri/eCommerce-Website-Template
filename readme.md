@@ -1,12 +1,10 @@
 #An eCommerce Website Template
 Made with Pug and Sass, it containes 8 pages:
-- [Home page] (https://pages.github.com/)
-- [Login page] (https://pages.github.com/)
-- [Signup page] (https://pages.github.com/)
-- :mag: [Search page] (https://pages.github.com/)
-- [Product page] (https://pages.github.com/)
-- [Shopping Cart (stap 1) page] (https://pages.github.com/)
-- [Shopping Cart (stap 2) page] (https://pages.github.com/)
-- [Shopping Cart (stap 3) page] (https://pages.github.com/)
+- [Home page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/)
+- [Login page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/login)
+- [Signup page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/signup)
+- [Search page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/search)
+- [Product page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/product-page)
+- [Shopping Cart (stap 1) page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/shopping-cart)
 
 :heavy_exclamation_mark: The design used is not mine, this is the owner: https://uibundle.com/products/eCommerce-Free-UI-Kit
