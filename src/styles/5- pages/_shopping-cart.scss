@@ -99,6 +99,89 @@
 
 .address-form__row {
     display: flex;
-    gap: 4em;
+    width: 100%;
     margin-bottom: 26px;
+    align-items: flex-start;
+    justify-items: flex-start;
+    gap: 2em;
+
+    @media only screen and (max-width: 644px) {
+        flex-direction: column;
+    }
+    
+    .input-container {
+        flex: 1;
+        @media only screen and (max-width: 644px) {
+            width: 100%;
+        }
+    }
+}
+
+.radio-card {
+    width: 143px;
+    height: 188px;
+    padding: 25px 15px;
+    border: 1px solid $muted-text-color;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    img {
+        margin-bottom: 32px;
+    }
+
+    &-price {
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.5;
+        color: $dark-gray;
+    }
+
+    
+}
+
+.radio-card-container {
+    position: relative;
+}
+
+.radio-card-input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    &:checked ~ .radio-card {
+        border-color: $primary-color;
+    }
+}
+
+.grid-layout {
+    flex: 30%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(143px, 1fr));
+    gap: 8px;
+    margin-top: 28px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    @media only screen and (max-width: 644px) {
+        margin-left: 0;
+    }
+}
+
+.flex-display {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1188px) {
+        flex-direction: column;
+    }
 }
