@@ -5,6 +5,6 @@ Made with Pug and Sass, it containes 8 pages:
 - [Signup page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/signup)
 - [Search page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/search)
 - [Product page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/product-page)
-- [Shopping Cart (stap 1) page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/shopping-cart)
+- [Shopping Cart (step 1) page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/shopping-cart)
 
 :heavy_exclamation_mark: The design used is not mine, this is the owner: https://uibundle.com/products/eCommerce-Free-UI-Kit
