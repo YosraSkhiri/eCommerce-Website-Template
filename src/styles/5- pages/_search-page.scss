@@ -47,14 +47,20 @@
 .search-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 1.5em;
+    margin-bottom: 35px;
+
 
     @media only screen and (max-width: 1248px) {
         flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-right: 0;
     }
 
     &__form {
-        margin-bottom: 35px;
         @media only screen and (max-width: 1248px) {
             margin-top: 35px;
         }
@@ -69,8 +75,13 @@
     .row-filter {
         display: inline-block;
 
-        select:not(:last-child) {
-            margin-right: 36px;
+        &:not(:last-child) {
+            margin-right: 30px;
+
+            @media only screen and (max-width: 1248px) {
+                margin-bottom: 1em;
+                margin-right: 0;
+            }
         }
 
         @media only screen and (max-width: 979px) {
@@ -90,6 +101,7 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+    gap: 1em;
 }
 
 .filter-toggle {
@@ -102,6 +114,7 @@
     position: relative;
     display: inline-block;
     text-transform: uppercase;
+    margin-right: -5px;
 }
 
 .filter-radio__label {
@@ -163,4 +176,12 @@
     &.blue {
         background-color: #0F73AD;
     }
+}
+
+.light-txt {
+    color: $muted-text-color;
+}
+
+.search-title {
+    font-size: 24px;
 }

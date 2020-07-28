@@ -4,3 +4,4 @@ let productTab = document.querySelector('#product-tab')
 productBtn.addEventListener('click', () => {
     productTab.classList.toggle('filter-toggle');
 })
+
