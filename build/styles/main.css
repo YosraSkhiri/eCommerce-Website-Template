@@ -397,7 +397,8 @@ body {
 
 .search-bar--input {
   display: inline-block;
-  width: 415px; }
+  width: 415px;
+  border: 1px solid #CECECE; }
   @media only screen and (max-width: 425px) {
     .search-bar--input {
       width: 300px; } }
