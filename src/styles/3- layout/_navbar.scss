@@ -17,16 +17,6 @@
 
         &-item {
             display: inline-block;
-            @media only screen and (max-width: 768px) {
-                display: block;
-            }
-        }
-
-        @media only screen and (max-width: 768px) {
-            display: block;
-            margin: 0;
-            padding: 30px 51px 30px 80px;
-            text-align: right;
         }
     }
     
@@ -60,20 +50,6 @@
         bottom: 11px;
         white-space: nowrap;
     }
-
-    @media only screen and (max-width: 425px) {
-        padding: 28px 0;
-
-        &__logo-svg {
-            width: 43px; 
-            height: 33px;
-        }
-
-        &__logo-txt {
-            font-size: 17px;
-            margin-left: 17px;
-        }
-    }
 }
 
 .navbar__logo,
@@ -84,18 +60,10 @@
 
 .menu {
     display: none;
-
-    @media only screen and (max-width: 768px) { 
-        display: inline-block;      
-    }
 }
 
 #profile {
     display: none;
-
-    @media only screen and (max-width: 768px) {
-        display: block; 
-    }
 }
 
 .navbar-level-2 {
@@ -107,26 +75,6 @@
     padding: 54px 0px;
     background-color: $nav-bg-color--light;
     color: $primary-text-color;
-
-    @media only screen and (max-width: 768px) {
-        position: static;
-        text-align: right;
-        padding: 20px 0;
-        max-height: 100vh;
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
-
-        .flex--center {
-            flex-direction: column;
-            align-items: flex-end;
-        }
-    
-        .flex--center > * {
-            margin-bottom: 42px; 
-        }
-        
-    }
-    
 }
 
 .main-list__item {
@@ -214,6 +162,63 @@
         }
         100% {
             right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar__link-item {
+        display: block;
+    }
+
+    .navbar__link {
+        display: block;
+        margin: 0;
+        padding: 30px 51px 30px 80px;
+        text-align: right;
+    }
+
+    .menu {
+        display: inline-block; 
+    }
+
+    #profile {
+        display: block; 
+    }
+
+    .navbar-level-2 {
+        position: static;
+        text-align: right;
+        padding: 20px 0;
+        max-height: 100vh;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+
+        .flex--center {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    
+        .flex--center > * {
+            margin-bottom: 42px; 
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .navbar {
+        padding: 28px 0;
+
+        &__logo-svg {
+            width: 43px; 
+            height: 33px;
+        }
+
+        &__logo-txt {
+            font-size: 17px;
+            margin-left: 17px;
         }
     }
 }

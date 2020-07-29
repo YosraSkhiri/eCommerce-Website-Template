@@ -159,15 +159,6 @@ body {
     cursor: pointer; }
     .navbar__link-item {
       display: inline-block; }
-      @media only screen and (max-width: 768px) {
-        .navbar__link-item {
-          display: block; } }
-    @media only screen and (max-width: 768px) {
-      .navbar__link {
-        display: block;
-        margin: 0;
-        padding: 30px 51px 30px 80px;
-        text-align: right; } }
   .navbar__utility {
     display: inline-block;
     padding: 0 8px;
@@ -189,15 +180,6 @@ body {
     margin-left: 24px;
     bottom: 11px;
     white-space: nowrap; }
-  @media only screen and (max-width: 425px) {
-    .navbar {
-      padding: 28px 0; }
-      .navbar__logo-svg {
-        width: 43px;
-        height: 33px; }
-      .navbar__logo-txt {
-        font-size: 17px;
-        margin-left: 17px; } }
 
 .navbar__logo,
 .navbar__links,
@@ -206,15 +188,9 @@ body {
 
 .menu {
   display: none; }
-  @media only screen and (max-width: 768px) {
-    .menu {
-      display: inline-block; } }
 
 #profile {
   display: none; }
-  @media only screen and (max-width: 768px) {
-    #profile {
-      display: block; } }
 
 .navbar-level-2 {
   display: none;
@@ -225,19 +201,6 @@ body {
   padding: 54px 0px;
   background-color: #FFFFFF;
   color: #111111; }
-  @media only screen and (max-width: 768px) {
-    .navbar-level-2 {
-      position: static;
-      text-align: right;
-      padding: 20px 0;
-      max-height: 100vh;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch; }
-      .navbar-level-2 .flex--center {
-        flex-direction: column;
-        align-items: flex-end; }
-      .navbar-level-2 .flex--center > * {
-        margin-bottom: 42px; } }
 
 .main-list__item {
   font-size: 14px;
@@ -303,6 +266,41 @@ body {
       right: -100%; }
     100% {
       right: 0; } } }
+
+@media only screen and (max-width: 768px) {
+  .navbar__link-item {
+    display: block; }
+  .navbar__link {
+    display: block;
+    margin: 0;
+    padding: 30px 51px 30px 80px;
+    text-align: right; }
+  .menu {
+    display: inline-block; }
+  #profile {
+    display: block; }
+  .navbar-level-2 {
+    position: static;
+    text-align: right;
+    padding: 20px 0;
+    max-height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+    .navbar-level-2 .flex--center {
+      flex-direction: column;
+      align-items: flex-end; }
+    .navbar-level-2 .flex--center > * {
+      margin-bottom: 42px; } }
+
+@media only screen and (max-width: 425px) {
+  .navbar {
+    padding: 28px 0; }
+    .navbar__logo-svg {
+      width: 43px;
+      height: 33px; }
+    .navbar__logo-txt {
+      font-size: 17px;
+      margin-left: 17px; } }
 
 .footer {
   width: 100%;
