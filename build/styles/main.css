@@ -350,32 +350,47 @@ body {
 
 .search-bar {
   display: none;
-  position: relative;
   margin-right: 20px; }
-  .search-bar--icon {
-    position: absolute;
-    top: 15px;
-    right: 22px; }
+  .search-bar--input {
+    display: inline-block;
+    width: 415px;
+    border: 1px solid #CECECE; }
+    @media only screen and (max-width: 425px) {
+      .search-bar--input {
+        width: 300px; } }
+  .search-bar--show {
+    display: inline-block; }
   @media only screen and (max-width: 1250px) {
     .search-bar {
       margin-right: 0px;
       padding: 0 10px;
-      position: absolute;
       top: 150px;
       right: 50%;
-      transform: translateX(50%); } }
+      transform: translateX(50%); }
+      .search-bar.input-w-icon {
+        position: absolute; } }
   @media only screen and (max-width: 425px) {
     .search-bar {
       top: 100px; } }
 
-.search-bar--show {
-  display: inline-block; }
+.input-w-icon {
+  position: relative; }
+  .input-w-icon .input-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); }
 
 .txt-input {
-  padding: 15px 40px 15px 28px;
+  padding: 15px 45px 15px 28px;
   border-radius: 50px;
   font-size: 13px;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border: 1px solid #CECECE; }
+
+.default-input {
+  width: 100%;
+  margin-bottom: 15px; }
 
 .select-input {
   padding: 15px 40px 15px 28px;
@@ -394,14 +409,6 @@ body {
   padding: 15px 40px;
   border-radius: 50px;
   border: 1px solid #CECECE; }
-
-.search-bar--input {
-  display: inline-block;
-  width: 415px;
-  border: 1px solid #CECECE; }
-  @media only screen and (max-width: 425px) {
-    .search-bar--input {
-      width: 300px; } }
 
 .checkbox-wrapper {
   position: relative;
@@ -438,19 +445,6 @@ body {
   padding-left: 36px;
   font-size: 14px;
   cursor: pointer; }
-
-.default-input {
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #CECECE; }
-
-.input-w-icon {
-  position: relative; }
-  .input-w-icon .input-icon {
-    position: absolute;
-    top: 27%;
-    right: 20px;
-    cursor: pointer; }
 
 .label {
   display: inline-block;

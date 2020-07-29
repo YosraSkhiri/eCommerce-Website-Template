@@ -1,37 +1,59 @@
 .search-bar {
     display: none;
-    position: relative;
     margin-right: 20px;
-    &--icon {
-        position: absolute;
-        top: 15px;
-        right: 22px;
-    }    
+
+    &--input {
+        display: inline-block;
+        width: 415px;
+        border: 1px solid $muted-text-color;
+        @media only screen and (max-width: 425px) {
+            width: 300px;
+        }
+    }
+
+    &--show {
+        display: inline-block;
+    }
 
     @media only screen and (max-width: 1250px) {
         margin-right: 0px;
         padding: 0 10px;
-        position: absolute;
         top: 150px;
         right: 50%;
         transform: translateX(50%);
+
+        &.input-w-icon {
+            position: absolute;
+        }
     }
 
     @media only screen and (max-width: 425px) {
         top: 100px;
     }
-    
 }
 
-.search-bar--show {
-    display: inline-block;
+.input-w-icon {
+    position: relative;
+
+    .input-icon {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
 }
 
 .txt-input {
-    padding: 15px 40px 15px 28px;
+    padding: 15px 45px 15px 28px;
     border-radius: 50px;
     font-size: 13px;
     background-color: $light-bg-color;
+    border: 1px solid $muted-text-color;
+}
+
+.default-input {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .select-input {
@@ -51,15 +73,6 @@
     padding: 15px 40px;
     border-radius: 50px;
     border: 1px solid $muted-text-color;
-}
-
-.search-bar--input {
-    display: inline-block;
-    width: 415px;
-    border: 1px solid $muted-text-color;
-    @media only screen and (max-width: 425px) {
-        width: 300px;
-    }
 }
 
 .checkbox {
@@ -108,27 +121,9 @@
     }
 }
 
-.default-input {
-    width: 100%;
-    margin-bottom: 15px;
-    border: 1px solid $muted-text-color;
-}
-
-.input-w-icon {
-    position: relative;
-
-    .input-icon {
-        position: absolute;
-        top: 27%;
-        right: 20px;
-        cursor: pointer;
-    }
-}
-
 .label {
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 12px;
 }
-
