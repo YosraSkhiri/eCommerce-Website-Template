@@ -522,11 +522,6 @@ body {
   text-transform: none;
   border-radius: 50px;
   cursor: pointer; }
-  @media only screen and (max-width: 537px) {
-    .btn-social-media {
-      justify-content: center; }
-      .btn-social-media:not(:last-child) {
-        margin-bottom: 20px; } }
   .btn-social-media__icon {
     margin-right: 23px; }
 
@@ -542,6 +537,12 @@ body {
   padding-top: 18px;
   padding-bottom: 18px;
   text-transform: none; }
+
+@media only screen and (max-width: 537px) {
+  .btn-social-media {
+    justify-content: center; }
+    .btn-social-media:not(:last-child) {
+      margin-bottom: 20px; } }
 
 .product-card {
   position: relative;

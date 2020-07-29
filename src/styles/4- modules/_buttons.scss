@@ -91,15 +91,6 @@
     border-radius: 50px;
     cursor: pointer;
 
-    @media only screen and (max-width: 537px) {
-        justify-content: center;
-
-        &:not(:last-child){
-            margin-bottom: 20px;
-        }
-        
-    }
-
     &__icon {
         margin-right: 23px;
     }
@@ -121,3 +112,13 @@
     text-transform: none;
 }
 
+@media only screen and (max-width: 537px) {
+
+    .btn-social-media {
+        justify-content: center;
+
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }  
+}
