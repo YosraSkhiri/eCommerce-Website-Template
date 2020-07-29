@@ -8,12 +8,7 @@ body {
 .container {
     max-width: 90%;
     padding: 0px 35px;
-    margin: auto;
-
-    @media only screen and (max-width: 425px) {
-        max-width: 98%;
-        padding: 0px 30px;   
-    }
+    margin: auto; 
 }
 
 .wrapper {
@@ -49,10 +44,6 @@ body {
     .breadcrumb {
         display: inline-block;
         font-size: 13px;
-
-        @media only screen and (max-width: 768px) {
-            padding: 8px 0;
-        }
     }
 
     .breadcrumb:not(:last-child) {
@@ -67,11 +58,6 @@ body {
 
     &__row {
         padding-top: 43px;
-
-        @media only screen and (max-width: 768px) {
-            padding-top: 10px;
-            
-        }
     }
 }
 
@@ -82,4 +68,23 @@ body {
 .side-title {
     font-size: 20px;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .container {
+        max-width: 98%;
+        padding: 0px 30px;   
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .breadcrumbs .breadcrumb {
+        padding: 8px 0;
+    }
+
+    .breadcrumbs__row {
+        padding-top: 10px;
+    }
 }

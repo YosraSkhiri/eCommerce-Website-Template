@@ -86,10 +86,6 @@ body {
   max-width: 90%;
   padding: 0px 35px;
   margin: auto; }
-  @media only screen and (max-width: 425px) {
-    .container {
-      max-width: 98%;
-      padding: 0px 30px; } }
 
 .wrapper {
   margin: 37px 0; }
@@ -119,9 +115,6 @@ body {
   .breadcrumbs .breadcrumb {
     display: inline-block;
     font-size: 13px; }
-    @media only screen and (max-width: 768px) {
-      .breadcrumbs .breadcrumb {
-        padding: 8px 0; } }
   .breadcrumbs .breadcrumb:not(:last-child) {
     color: #b2b2b2; }
   .breadcrumbs .breadcrumb:not(:last-child)::after {
@@ -130,9 +123,6 @@ body {
     color: #b2b2b2; }
   .breadcrumbs__row {
     padding-top: 43px; }
-    @media only screen and (max-width: 768px) {
-      .breadcrumbs__row {
-        padding-top: 10px; } }
 
 .muted-txt {
   color: #CECECE; }
@@ -140,6 +130,17 @@ body {
 .side-title {
   font-size: 20px;
   font-weight: 600; }
+
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 98%;
+    padding: 0px 30px; } }
+
+@media only screen and (max-width: 768px) {
+  .breadcrumbs .breadcrumb {
+    padding: 8px 0; }
+  .breadcrumbs__row {
+    padding-top: 10px; } }
 
 .navbar {
   position: fixed;
