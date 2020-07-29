@@ -357,23 +357,8 @@ body {
     display: inline-block;
     width: 415px;
     border: 1px solid #CECECE; }
-    @media only screen and (max-width: 425px) {
-      .search-bar--input {
-        width: 300px; } }
   .search-bar--show {
     display: inline-block; }
-  @media only screen and (max-width: 1250px) {
-    .search-bar {
-      margin-right: 0px;
-      padding: 0 10px;
-      top: 150px;
-      right: 50%;
-      transform: translateX(50%); }
-      .search-bar.input-w-icon {
-        position: absolute; } }
-  @media only screen and (max-width: 425px) {
-    .search-bar {
-      top: 100px; } }
 
 .input-w-icon {
   position: relative; }
@@ -453,6 +438,22 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 12px; }
+
+@media only screen and (max-width: 425px) {
+  .search-bar--input {
+    width: 300px; }
+  .search-bar {
+    top: 100px; } }
+
+@media only screen and (max-width: 1250px) {
+  .search-bar {
+    margin-right: 0px;
+    padding: 0 10px;
+    top: 150px;
+    right: 50%;
+    transform: translateX(50%); }
+    .search-bar.input-w-icon {
+      position: absolute; } }
 
 .btn {
   display: inline-block;
