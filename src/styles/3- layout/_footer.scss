@@ -11,10 +11,6 @@
     &__group-links {
         justify-self: self-start;
         width: 160px;
-
-        @media only screen and (max-width: 768px) {
-            padding-bottom: 16px;
-        }
     }
 
     &__title {
@@ -51,15 +47,27 @@
         margin-right: 25px;
         margin-bottom: 25px;
     }
+}
 
-    @media only screen and (max-width: 908px) {
+@media only screen and (max-width: 908px) {
+
+    .footer {
         grid-template-columns: repeat(2, 50%);
         grid-template-areas: "col col" "col col" "col col";
     }
+}
 
-    @media only screen and (max-width: 375px){
+@media only screen and (max-width: 768px) {
+
+    .footer__group-links {
+        padding-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+
+    .footer {
         grid-template-columns: 1fr;
         grid-template-areas: "col";
     }
-
 }
