@@ -1,5 +1,5 @@
-let productBtn = document.querySelectorAll('#product-typ-btn');
-let productTab = document.querySelectorAll('#product-tab');
+let productBtn = document.querySelectorAll('.product-typ-btn-js');
+let productTab = document.querySelectorAll('.product-tab-js');
 let productTabArrows = document.querySelectorAll('.filter-title-arrow');
 
 productBtn.forEach((element, index) => {
