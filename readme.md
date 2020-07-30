@@ -1,5 +1,5 @@
 # An eCommerce Website Template
-Made with Pug and Sass, it containes 8 pages:
+Made with Pug and Sass, it containes 7 pages:
 - [Home page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/)
 - [Login page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/login)
 - [Signup page](https://yosraskhiri.github.io/eCommerce-Website-Template/build/signup)
