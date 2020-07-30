@@ -98,6 +98,22 @@
             margin-bottom: 1.5em;
         }
     }
+
+    .back-link {
+        margin-top: 0;
+
+        @media only screen and (max-width: 876px) {
+            margin: 2em 0;
+        }
+    }
+
+    .btn-actions > button:first-child {
+        margin-right: 26px;
+
+        @media only screen and (max-width: 876px) {
+            margin-bottom: 1em;
+        }
+    }
 }
 
 .address-form__row {
@@ -166,16 +182,17 @@
 }
 
 .grid-layout {
-    flex: 30%;
+    flex: 45%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(143px, 1fr));
     gap: 8px;
-    margin-top: 28px;
+    margin-top: 16px;
     margin-left: 1em;
     margin-bottom: 1em;
     align-items: center;
     justify-content: center;
     justify-items: center;
+
     @media only screen and (max-width: 644px) {
         margin-left: 0;
     }

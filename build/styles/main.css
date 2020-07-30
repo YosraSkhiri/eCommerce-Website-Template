@@ -1506,6 +1506,16 @@ body {
       align-items: flex-start; }
       .page-row-bottom > div {
         margin-bottom: 1.5em; } }
+  .page-row-bottom .back-link {
+    margin-top: 0; }
+    @media only screen and (max-width: 876px) {
+      .page-row-bottom .back-link {
+        margin: 2em 0; } }
+  .page-row-bottom .btn-actions > button:first-child {
+    margin-right: 26px; }
+    @media only screen and (max-width: 876px) {
+      .page-row-bottom .btn-actions > button:first-child {
+        margin-bottom: 1em; } }
 
 .address-form__row {
   display: flex;
@@ -1558,11 +1568,11 @@ body {
     border-color: #FBB03B; }
 
 .grid-layout {
-  flex: 30%;
+  flex: 45%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(143px, 1fr));
   gap: 8px;
-  margin-top: 28px;
+  margin-top: 16px;
   margin-left: 1em;
   margin-bottom: 1em;
   align-items: center;
