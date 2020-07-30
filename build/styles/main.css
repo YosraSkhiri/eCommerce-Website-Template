@@ -1453,10 +1453,13 @@ body {
     padding-top: 32px;
     font-size: 14px; }
   .shopping-cart-table td:not(:first-child) {
-    text-align: center; }
-  @media only screen and (max-width: 876px) {
-    .shopping-cart-table {
-      overflow-y: scroll; } }
+    text-align: center;
+    padding-left: .9em; }
+
+@media only screen and (max-width: 876px) {
+  .table-sc {
+    width: 100%;
+    overflow-x: scroll; } }
 
 .cel-title {
   font-size: 14px;

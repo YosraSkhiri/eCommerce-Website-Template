@@ -14,7 +14,6 @@
     }
 }
 
-
 .shopping-cart-table {
     width: 100%;
     margin-bottom: 48px;
@@ -25,11 +24,15 @@
 
     td:not(:first-child) {
         text-align: center;
+        padding-left: .9em;
     }
+}
+
+.table-sc {
 
     @media only screen and (max-width: 876px) {
-        //width: 100px;
-        overflow-y: scroll;
+        width: 100%;
+        overflow-x: scroll;
     }
 }
 
