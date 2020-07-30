@@ -469,10 +469,14 @@ body {
   .btn--white {
     margin-top: 25px;
     background-color: #FFFFFF; }
+    .btn--white:hover {
+      background-color: #ebebeb; }
   .btn--default {
     border: 1px solid #D8D8D8; }
   .btn--primary {
     background-color: #FBB03B; }
+    .btn--primary:hover {
+      background-color: #faa013; }
   .btn__tab--active {
     border: 2px solid #FBB03B; }
   .btn__tab--inactive {
@@ -503,6 +507,8 @@ body {
     vertical-align: top; }
   .btn-round--primary {
     background-color: #FBB03B; }
+    .btn-round--primary:hover {
+      background-color: #faa013; }
   .btn-round--secondary {
     background-color: #FFFFFF; }
     .btn-round--secondary svg path {

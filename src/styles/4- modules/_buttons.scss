@@ -13,6 +13,10 @@
     &--white {
         margin-top: 25px;
         background-color: $light-bg-color;
+
+        &:hover {
+            background-color: darken($color: $light-bg-color, $amount: 8%)
+        }
     }
 
     &--default {
@@ -21,6 +25,10 @@
 
     &--primary {
         background-color: $primary-color;
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 8%)
+        }
     }
 
     &__tab--active {
@@ -62,6 +70,10 @@
 
     &--primary {
         background-color: $primary-color;
+        
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 8%)
+        }    
     }
     
     &--secondary {
