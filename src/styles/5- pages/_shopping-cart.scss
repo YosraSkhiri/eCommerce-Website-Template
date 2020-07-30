@@ -118,6 +118,7 @@
 }
 
 .radio-card {
+    display: block;
     width: 143px;
     height: 188px;
     padding: 25px 15px;
@@ -131,17 +132,17 @@
     }
 
     &-price {
+        display: block;
         margin-bottom: 14px;
         font-weight: 600;
     }
 
-    p {
+    &-payment-type {
+        display: block;
         font-size: 13px;
         line-height: 1.5;
         color: $dark-gray;
     }
-
-    
 }
 
 .radio-card-container {
