@@ -635,20 +635,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media only screen and (max-width: 1024px) {
-      .newsletter__content {
-        flex-direction: column; } }
   .newsletter__title {
     flex: 1;
     font-size: 29px;
     font-weight: 500;
     line-height: 1.4;
     color: #FFFFFF; }
-    @media only screen and (max-width: 1024px) {
-      .newsletter__title {
-        margin-bottom: 1em;
-        font-size: 20px;
-        text-align: center; } }
   .newsletter__form {
     flex: 1;
     display: flex;
@@ -657,21 +649,26 @@ body {
     .newsletter__form input {
       justify-self: center;
       align-self: center; }
-    @media only screen and (max-width: 1024px) {
-      .newsletter__form {
-        flex-direction: column; } }
   .newsletter__input {
     width: 68%; }
-    @media only screen and (max-width: 1024px) {
-      .newsletter__input {
-        display: block;
-        width: 290px;
-        margin-bottom: .5em; } }
   .newsletter__btn {
     margin-left: 20px; }
-    @media only screen and (max-width: 1024px) {
-      .newsletter__btn {
-        margin-left: 0; } }
+
+@media only screen and (max-width: 1024px) {
+  .newsletter__content {
+    flex-direction: column; }
+  .newsletter__title {
+    margin-bottom: 1em;
+    font-size: 20px;
+    text-align: center; }
+  .newsletter__form {
+    flex-direction: column; }
+  .newsletter__input {
+    display: block;
+    width: 290px;
+    margin-bottom: .5em; }
+  .newsletter__btn {
+    margin-left: 0; } }
 
 .product-display__images {
   display: flex;

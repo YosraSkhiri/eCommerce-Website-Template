@@ -11,10 +11,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        @media only screen and (max-width: 1024px) {
-            flex-direction: column;
-        }
     }
 
     &__title {
@@ -23,12 +19,6 @@
         font-weight: 500;
         line-height: 1.4;
         color: $light-text-color;
-
-        @media only screen and (max-width: 1024px) {
-            margin-bottom: 1em;
-            font-size: 20px;
-            text-align: center;
-        }
     }
 
     &__form {
@@ -41,31 +31,44 @@
             justify-self: center;
             align-self: center;
         }
-
-        @media only screen and (max-width: 1024px) {
-            flex-direction: column;
-        }
     }
 
 
     &__input {
         width: 68%;
-        
-        @media only screen and (max-width: 1024px) {
-            display: block;
-            width: 290px;
-            margin-bottom: .5em;
-        }
     } 
 
     &__btn {
         margin-left: 20px;
-        @media only screen and (max-width: 1024px) {
-            margin-left: 0;
-        }
     }
 
     &::before {
         @extend %img-dark-overlay
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .newsletter__content {
+        flex-direction: column;
+    }
+
+    .newsletter__title {
+        margin-bottom: 1em;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+    }
+
+    .newsletter__input {
+        display: block;
+        width: 290px;
+        margin-bottom: .5em;
+    }
+
+    .newsletter__btn {
+        margin-left: 0;
     }
 }
