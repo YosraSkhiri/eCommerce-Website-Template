@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.14.1",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   }
 }
